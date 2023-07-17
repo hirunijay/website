@@ -13,11 +13,13 @@ function HeroSection() {
           alt="Picture of the author"
         />
       </div>
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-        <div className="text-3xl mb-4">
-          LEARN EFOIL SURF
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+        <div className="text-3xl mb-4 xl:leading-[110px]">
+          <span className="text-[6.4vw] font-[400]">LEARN</span><br/>
+          <span className="text-[10.66vw] font-[400]">EFOIL</span><br/>
+          <span className="text-[10.66vw] font-[400]">SURF</span><br/>
         </div>
-        <div className="text-2xl">
+        <div className="text-[2vw] font-[400] text-black">
           Bacalar, Mexico
         </div>
       </div>
