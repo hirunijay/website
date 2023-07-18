@@ -10,13 +10,13 @@ function PackageSlider() {
         <div>
         <div className="text-[16px] font-[500]">Get wet</div>
         <div className="text-[48px] font-[400]">summer trips</div>
-        <div className="h-[946.41px] w-[1152px]">
+        <div className="h-[790px] w-[1152px]">
           <div className="relative">
             <div>
               <Image
             src={HeroImg}
             layout="responsive"
-            objectFit="cover"
+            placeholder="blur"
             alt="Picture of the author"
             />
             </div>
