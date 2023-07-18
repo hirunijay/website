@@ -8,19 +8,19 @@ const garamondNarrow = localFont({
 
 function JoinOurCommunity() {
   return (
-    <div className={`${garamondNarrow.variable} font-sans text-center bg-white`}>
-      <div className="text-[#ec542d] pt-20 font-[500] text-[22px] leading-[20px]">
+    <div className={`text-center`}>
+      <div className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
         JOIN OUR COMMUNITY
       </div>
-      <div className="text-black">
-        <span className="text-[72px] font-[400] leading-[72px]">
+      <div className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
+        <span className="text-[80px] font-[400] leading-[80px]">
           Get the only
         </span>
         <br />
-        <span className="text-[72px] font-[400] leading-[72px]">
+        <span className="text-[80px] font-[400] leading-[80px]">
           Newsletter
         </span>
-        <span className="text-[72px] font-[300] leading-[72px]">
+        <span className="text-[80px] font-[300] leading-[80px]">
           {" "}
           worth
           <br />
@@ -28,7 +28,7 @@ function JoinOurCommunity() {
         </span>
       </div>
       <div>
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-16">
           <input
             type="email"
             placeholder="Your email address"
