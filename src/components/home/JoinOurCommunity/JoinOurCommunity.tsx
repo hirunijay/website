@@ -8,7 +8,7 @@ const garamondNarrow = localFont({
 
 function JoinOurCommunity() {
   return (
-    <div className={`${garamondNarrow.variable} font-sans text-center`}>
+    <div className={`${garamondNarrow.variable} font-sans text-center bg-white`}>
       <div className="text-[#ec542d] pt-20 font-[500] text-[22px] leading-[20px]">
         JOIN OUR COMMUNITY
       </div>
