@@ -11,23 +11,25 @@ import Img6 from "../../../common/assets/images/GridImages/image6.webp";
 
 function GridSection() {
   return (
-    <div className="container mx-auto">
-      <div className="w-full py-20">
+    <div className="mx-0">
+      <div className="w-full py-24">
         <div className="grid grid-cols-3 gap-5 grid-rows-9">
           <div className="col-start-2 row-span-4 shadow-lg">
             <GridItem
               title="SURF GOLF RETREAT"
               subtitle="Silver Coast, Portugal"
+              titleFontStyle=""
+              subtitleFontStyle=""
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img1}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
           <div className="row-span-4 row-start-2 shadow-lg">
@@ -37,13 +39,13 @@ function GridSection() {
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img2}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
           <div className="col-start-3 row-span-4 row-start-2 shadow-lg">
@@ -53,13 +55,13 @@ function GridSection() {
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img3}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
           <div className="col-start-2 row-span-4 row-start-5 shadow-lg">
@@ -69,13 +71,13 @@ function GridSection() {
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img4}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
           <div className="col-start-3 row-span-4 row-start-6 shadow-lg">
@@ -85,29 +87,29 @@ function GridSection() {
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img5}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
           <div className="col-start-1 row-span-4 row-start-6 shadow-lg">
             <GridItem
-              title="PARAMO SAFARI"
+              title="PARA MOTOR SAFARI"
               subtitle="Skeleton Bay, Namibia"
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
-              descFontSize=""
+              // descFontSize=""
               description="Starting from $1.800"
               actions=""
               backgroundImage={Img6}
               titleTextColour=""
               descriptionTextColour="white"
-              height="h-[600px]"
+              // height="h-[600px]"
             />
           </div>
         </div>

@@ -1,9 +1,22 @@
 import React from "react";
 import Image from "next/image";
+import localFont from "@next/font/local";
+
+const garamondNarrow = localFont({
+  src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
+  variable: "--font-garamond-narrow-regular",
+});
+
+const kabel = localFont({
+  src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
+  variable: "--font-kabel-bold",
+});
 
 interface GridItemProps {
   title: string;
-  height: string;
+  height?: string;
+  titleFontStyle?: any;
+  subtitleFontStyle?: any;
   subtitle: string;
   subtitleTextSize?: string;
   description?: any;
@@ -23,6 +36,8 @@ const GridItem = ({
   title,
   subtitle,
   subtitleTextSize,
+  titleFontStyle,
+  subtitleFontStyle,
   descLineHeight,
   descFontWeight,
   descFontSize,
@@ -31,7 +46,7 @@ const GridItem = ({
   backgroundImage,
   titleTextColour,
   descriptionTextColour,
-  height = "h-[600px]",
+  height = "h-[933px]",
 }: GridItemProps) => {
   return (
     <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card">
@@ -45,11 +60,15 @@ const GridItem = ({
         />
       </div>
       {/* absolute content */}
-      <div className="absolute flex flex-col items-center justify-center w-full px-3 mt-10 grid_card__content">
+      <div className="absolute flex flex-col items-center justify-center w-full px-3 mt-32 grid_card__content">
         <div className="flex flex-col gap-3 text-center text_content mx-7 lg:mx-5 xl:mx-5 2xl:mx-8 ">
-          <h1 className="font-[700] text-white text-7xl">{title}</h1>
+          <h1
+            className={`font-[800] text-white 2xl:text-[90px] xl:text-6xl ${kabel.variable} font-serif`}
+          >
+            {title}
+          </h1>
           <h3
-            className="font-[510] leading-normal lg:text-xl md:text-xl"
+            className={`font-[510] leading-normal lg:text-3xl md:text-xl ${garamondNarrow.variable} font-sans`}
             style={{
               color: titleTextColour,
             }}
@@ -59,7 +78,7 @@ const GridItem = ({
 
           {description && (
             <p
-              className="absolute font-normal right-[140px] top-[500px] text-md"
+              className="absolute font-normal right-[230px] top-[800px] text-lg"
               style={{
                 color: descriptionTextColour,
                 lineHeight: descLineHeight,
