@@ -5,12 +5,14 @@ import HeroImg from '../../../../src/common/assets/images/homeImg/lift_day0-18.w
 function HeroSection() {
   return (
     <div className="relative">
-      <div className="w-full h-auto">
+      <div className=" overflow-hidden">
         <Image
           src={HeroImg}
-          layout="responsive"
-          objectFit="cover"
           alt="Picture of the author"
+          height={1317}
+          width={1920}
+          layout="responsive"
+          placeholder="blur"
         />
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
