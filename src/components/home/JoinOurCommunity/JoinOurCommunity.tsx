@@ -20,7 +20,7 @@ function JoinOurCommunity() {
         <span className="text-[80px] font-[400] leading-[80px]">
           Newsletter
         </span>
-        <span className="text-[80px] font-[300] leading-[80px]">
+        <span className="text-[80px] font-[300] leading-[80px] italic">
           {" "}
           worth
           <br />
