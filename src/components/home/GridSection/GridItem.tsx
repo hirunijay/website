@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 
 const garamondNarrow = localFont({
   src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
