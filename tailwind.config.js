@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-garamond-narrow-regular)"],
+        sans: [
+          "var(--font-garamond-narrow-regular),...defaultTheme.fontFamily.sans",
+        ],
         serif: ["var(--font-kabel-bold)"],
       },
       backgroundImage: {
