@@ -2,13 +2,14 @@ import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
 
+
 const garamondNarrow = localFont({
-  src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
+  src: "../../common/assets/fonts/garamond-condensed-regular_a2s7r//GaramondCondensedRegular.ttf",
   variable: "--font-garamond-narrow-regular",
 });
 
 const kabel = localFont({
-  src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
+  src: "../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
   variable: "--font-kabel-bold",
 });
 
