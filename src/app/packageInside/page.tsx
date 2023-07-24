@@ -4,12 +4,13 @@ import Section3 from "@/components/packageInside/Section3/Section3";
 import React from "react";
 
 function packageInside() {
-  return;
-  <div className="mx-0">
-    <Section1 />
-    <Section2 />
-    <Section3 />
-  </div>;
+  return (
+    <div className="mx-0">
+      <Section1 />
+      <Section2 />
+      <Section3 />
+    </div>
+  );
 }
 
 export default packageInside;
