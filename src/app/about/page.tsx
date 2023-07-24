@@ -9,7 +9,7 @@ function about() {
       <div className="w-full py-24">
         <Section1 />
         <Section2 />
-        {/* <Section3 /> */}
+        <Section3 />
       </div>
     </div>
   );
