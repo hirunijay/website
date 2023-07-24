@@ -29,7 +29,7 @@ function HeroSection() {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
         <div
-          className={`text-3xl mb-4 xl:leading-[110px] ${kabel.variable} font-serif`}
+          className={`text-3xl mb-4 xl:leading-[110px] ${kabel.variable} font-serif tracking-tight`}
         >
           <span className="text-[6.4vw] font-[400]">LEARN</span>
           <br />

@@ -8,8 +8,8 @@ import logo from "../../common/assets/images/homeImg/landOfRideLogo.png";
 const franklin_font = Libre_Franklin({ subsets: ["latin"] });
 
 const leftMenu = [
-  { title: "Adventures", path: "/" },
-  { title: "About Us", path: "/" },
+  { title: "Adventures", path: "/adventure" },
+  { title: "About Us", path: "/about" },
 ];
 
 const rightMenu = [
