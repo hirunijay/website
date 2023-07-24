@@ -7,19 +7,20 @@ import Img2 from "@/common/assets/images/aboutImages/about3.webp";
 function Section3() {
   return (
     <div className="mx-20 my-40">
-      <div className="grid justify-center h-full grid-cols-2 grid-rows-3 gap-4 overflow-hidden grid_card">
-        <div className="row-span-3 h-[1012px]">
+      <div className="grid grid-cols-2 grid-rows-6 gap-4 overflow-hidden grid_card">
+        <div className="row-span-6">
           <Image
             src={Img1}
             alt={"motorcycle image"}
             placeholder="blur"
-            width={880}
-            height={1012}
+            width={1183.29}
+            height={1361.09}
             // className="object-cover"
-            style={{ objectFit: "cover" }}
+            layout="responsive"
+            // style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="row-span-2">
+        <div className="row-span-4">
           <Image
             src={Img2}
             alt={"paragliding"}
@@ -29,7 +30,7 @@ function Section3() {
             className="object-cover"
           />
         </div>
-        <div className="col-start-2 row-start-3">
+        <div className="row-span-2 col-start-2 row-start-5">
           <div className="flex flex-col">
             <div>OUR TEAM ON A RIDE</div>
             <div>
