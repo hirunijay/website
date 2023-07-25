@@ -91,6 +91,7 @@ const GridItem = ({
           )}
 
           <div className="flex flex-row justify-around links">{actions}</div>
+          {/* this is for checking */}
         </div>
       </div>
     </div>
