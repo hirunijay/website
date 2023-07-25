@@ -12,9 +12,9 @@ import Img6 from "../../../common/assets/images/GridImages/image6.webp";
 function GridSection() {
   return (
     <div className="mx-0">
-      <div className="w-full py-24">
-        <div className="grid grid-cols-3 gap-5 grid-rows-9">
-          <div className="col-start-2 row-span-4 shadow-lg">
+      <div className="w-full py-60">
+        <div className="grid grid-cols-3 grid-rows-2 gap-6">
+          <div className="shadow-lg">
             <GridItem
               title="SURF GOLF RETREAT"
               subtitle="Silver Coast, Portugal"
@@ -32,7 +32,7 @@ function GridSection() {
               // height="h-[600px]"
             />
           </div>
-          <div className="row-span-4 row-start-2 shadow-lg">
+          <div className="shadow-lg column_two">
             <GridItem
               title="LEARN EFOIL SURF"
               subtitle="Bacala, Mexico"
@@ -48,7 +48,7 @@ function GridSection() {
               // height="h-[600px]"
             />
           </div>
-          <div className="col-start-3 row-span-4 row-start-2 shadow-lg">
+          <div className="shadow-lg">
             <GridItem
               title="SANDS OF GOBI"
               subtitle="Gobi Deseart, Mongolia"
@@ -64,7 +64,7 @@ function GridSection() {
               // height="h-[600px]"
             />
           </div>
-          <div className="col-start-2 row-span-4 row-start-5 shadow-lg">
+          <div className="shadow-lg">
             <GridItem
               title="MID SUMMER GOLF CLUB"
               subtitle="Ahus Sweden"
@@ -80,7 +80,7 @@ function GridSection() {
               // height="h-[600px]"
             />
           </div>
-          <div className="col-start-3 row-span-4 row-start-6 shadow-lg">
+          <div className="shadow-lg column_two">
             <GridItem
               title="EL CAMINO E-BIKE"
               subtitle="Galicia Span"
@@ -96,7 +96,7 @@ function GridSection() {
               // height="h-[600px]"
             />
           </div>
-          <div className="col-start-1 row-span-4 row-start-6 shadow-lg">
+          <div className="shadow-lg">
             <GridItem
               title="PARA MOTOR SAFARI"
               subtitle="Skeleton Bay, Namibia"
