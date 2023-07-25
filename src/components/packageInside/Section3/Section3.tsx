@@ -43,7 +43,7 @@ function Section3() {
             </p>
           </div>
         </div>
-        <div>
+        <div className="h-[712px] overflow-hidden">
           {" "}
           <Image
             src={packageInside}
@@ -52,7 +52,7 @@ function Section3() {
             height={712}
             width={1140}
             // fill
-            className="object-cover"
+            className="object-cover object-bottom"
           />
         </div>
       </div>
