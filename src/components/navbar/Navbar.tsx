@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Libre_Franklin } from "next/font/google";
 
-import logo from "../../common/assets/images/homeImg/landOfRideLogo.png";
+import logo from "../../common/assets/images/homeImg/Final-Logo.png";
 
 const franklin_font = Libre_Franklin({ subsets: ["latin"] });
 
@@ -35,14 +35,15 @@ function Navbar() {
           </Link>
         ))}
       </div>
+      <div className="h-[25px] w-[125px] flex items-center">
       <Image
         src={logo}
         alt="main_logo"
-        height={25}
-        width={125}
         placeholder="blur"
         className="object-contain w-auto p-2"
       />
+      </div>
+      
       <div className="flex flex-row font-sans">
         {rightMenu.map((item, index) => (
           <Link
