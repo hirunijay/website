@@ -91,8 +91,8 @@ const GridItem = ({
           )}
 
           <div className="flex flex-row justify-around links">{actions}</div>
-          {/* this is for checking */}
-         </div>
+          {/* This is the sample message for checking purpose */}
+        </div>
       </div>
     </div>
   );
