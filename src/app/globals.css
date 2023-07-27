@@ -26,7 +26,25 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+/* grid column two */
 .column_two {
   position: relative;
   bottom: 100px;
+}
+
+/* swiper */
+.packageSlider {
+  .swiper-slide {
+    width: 60%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: rgb(246, 242, 239);
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.32);
+    color: black;
+  }
 }

@@ -52,8 +52,8 @@ const sliderContent = [
 function PackageSlider() {
   return (
     <div className="mx-0">
-      <div className="p-20">
-        <div className="flex flex-col gap-3 mb-20">
+      <div className="py-20">
+        <div className="flex flex-col gap-3 px-20 mb-20">
           <div className="text-lg font-semibold">GET WET</div>
           <div
             className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter`}
@@ -63,26 +63,12 @@ function PackageSlider() {
         </div>
         <Swiper
           slidesPerView="auto"
-          className=""
+          className="packageSlider"
           navigation={true}
           modules={[Navigation]}
           spaceBetween={10}
-          // loop={true}
           freeMode={true}
-          // breakpoints={{
-          //   640: {
-          //     slidesPerView: 1,
-          //     spaceBetween: 10,
-          //   },
-          //   768: {
-          //     slidesPerView: 3,
-          //     spaceBetween: 10,
-          //   },
-          //   1024: {
-          //     slidesPerView: 5,
-          //     spaceBetween: 10,
-          //   },
-          // }}
+          loop={true}
         >
           {sliderContent.map((item, index) => (
             <SwiperSlide key={index}>
