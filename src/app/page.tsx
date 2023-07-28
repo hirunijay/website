@@ -11,7 +11,7 @@ export default function Home() {
       <JoinOurCommunity />
       <GridSection />
       <PackageSlider />
-      <Testimonial />
+      {/* <Testimonial /> */}
     </main>
   );
 }
