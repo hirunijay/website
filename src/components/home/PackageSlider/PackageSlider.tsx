@@ -66,9 +66,9 @@ function PackageSlider() {
           className="packageSlider"
           navigation={true}
           modules={[Navigation]}
-          spaceBetween={10}
+          spaceBetween={0}
           freeMode={true}
-          loop={true}
+          // loop={true}
         >
           {sliderContent.map((item, index) => (
             <SwiperSlide key={index}>
