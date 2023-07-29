@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import localFont from "next/font/local";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const garamondNarrow = localFont({
   src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
@@ -7,28 +10,45 @@ const garamondNarrow = localFont({
 });
 
 function JoinOurCommunity() {
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      // ... (other configuration settings)
+    });
+  }, []);
+
   return (
     <div className={`text-center`}>
-      <div className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
+      <div data-aos="fade-up" className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
         JOIN OUR COMMUNITY
       </div>
-      <div className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
-        <span className="text-[80px] font-[400] leading-[80px]">
+      <div  className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
+        <div data-aos="fade-right" className="text-[80px] font-[400] leading-[80px]">
           Get the only
-        </span>
+        </div>
         <br />
-        <span className="text-[80px] font-[400] leading-[80px]">
-          Newsletter
+        <div data-aos="fade-left">
+        <span  className="text-[80px] font-[400] leading-[80px]">
+          Newsletter&nbsp;
         </span>
         <span className="text-[80px] font-[300] leading-[80px] italic">
-          {" "}
           worth
-          <br />
-          riding
         </span>
+        </div>
+        <div data-aos="fade-right" className="text-[80px] font-[300] leading-[80px] italic"><span>riding</span></div>
+        
       </div>
       <div>
-        <div className="flex justify-center mt-16">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className="flex justify-center mt-16">
           <input
             type="email"
             placeholder="Your email address"
