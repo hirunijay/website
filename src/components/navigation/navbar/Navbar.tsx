@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Libre_Franklin } from "next/font/google";
 
-import logo from "../../common/assets/images/homeImg/Final-Logo.png";
+import logo from "@/common/assets/images/homeImg/Final-Logo.png";
 
 const franklin_font = Libre_Franklin({ subsets: ["latin"] });
 
@@ -19,7 +19,7 @@ const rightMenu = [
 
 function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 flex flex-row items-center justify-between bg-white border-b border-slate-200 navbar h-14">
+    <div className="flex flex-row items-center justify-between bg-white border-b border-slate-200 navbar h-14">
       <div className="flex flex-row font-sans">
         {leftMenu.map((item, index) => (
           <Link
@@ -35,15 +35,17 @@ function Navbar() {
           </Link>
         ))}
       </div>
-      <div className="h-[25px] w-[125px] flex items-center">
-      <Image
-        src={logo}
-        alt="main_logo"
-        placeholder="blur"
-        className="object-contain w-auto p-2"
-      />
-      </div>
-      
+      <Link href={"/"}>
+        <div className="h-[25px] w-[125px] flex items-center">
+          <Image
+            src={logo}
+            alt="main_logo"
+            placeholder="blur"
+            className="object-contain w-auto p-2"
+          />
+        </div>
+      </Link>
+
       <div className="flex flex-row font-sans">
         {rightMenu.map((item, index) => (
           <Link
@@ -59,7 +61,7 @@ function Navbar() {
           </Link>
         ))}
       </div>
-    </nav>
+    </div>
   );
 }
 

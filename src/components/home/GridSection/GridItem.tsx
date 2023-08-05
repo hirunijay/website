@@ -56,7 +56,7 @@ const GridItem = ({
           alt={`${title}`}
           placeholder="blur"
           fill
-          className="object-fit"
+          className="object-cover"
         />
       </div>
       {/* absolute content */}
@@ -75,7 +75,7 @@ const GridItem = ({
           >
             {subtitle}
           </h3>
- 
+
           {description && (
             <p
               className="absolute font-normal right-[230px] top-[800px] text-lg"

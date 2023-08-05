@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navigation from "@/components/navigation/Navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navigation />
         {children}
         <Footer />
       </body>
