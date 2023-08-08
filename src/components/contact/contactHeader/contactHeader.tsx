@@ -9,7 +9,7 @@ function ContactHeader() {
         }
     
   return (
-    <div>
+    <div className="pt-[80px]">
       <div className="text-center text-[30px] pb-[3vh]">{data.title}</div>
       <div className="text-center px-[10vw]">{data.content}</div>
     </div>

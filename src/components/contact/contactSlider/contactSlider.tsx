@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import imgsl1 from '../../../common/assets/images/sliderImages/imgsl1.jpg'
 import imgsl2 from '../../../common/assets/images/sliderImages/imgsl2.jpg'
 import imgsl3 from '../../../common/assets/images/sliderImages/imgsl3.jpg'
@@ -7,6 +8,8 @@ import imgsl5 from '../../../common/assets/images/sliderImages/imgsl5.jpg'
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -42,9 +45,23 @@ const data = [
 
 
 function ContactSlider() {
+    useEffect(() => {
+        AOS.init({
+          // Global settings:
+          disable: false,
+          startEvent: 'DOMContentLoaded',
+          initClassName: 'aos-init',
+          animatedClassName: 'aos-animate',
+          useClassNames: false,
+          disableMutationObserver: false,
+          debounceDelay: 50,
+          throttleDelay: 99,
+          // ... (other configuration settings)
+        });
+      }, []);
     
     return(
-        <div className='border-[15px] border-gray-50 h-[600px] w-[70vw] flex flex-col ml-auto mr-auto items-center mt-[10vh] mb-[5vh] rounded-[30px] bg-white'>
+        <div className='border-[15px] border-gray-50 h-[600px] w-[70vw] flex flex-col ml-auto mr-auto items-center mt-[10vh] mb-[5vh] rounded-[30px] bg-white shadow-2xl shadow-gray-900 mb-[100px]'>
             
             <Swiper
         spaceBetween={30}
