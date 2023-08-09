@@ -21,11 +21,11 @@ function ContactForm() {
     return (
         <div className='pt-[70px]'>
             
-            <div className='xl:w-[40vw] shadow-2xl shadow-gray-900 flex ml-[auto] mr-[auto] rounded-[15px]' data-aos="fade-right">
+            <div className='xl:w-[40vw] shadow-2xl shadow-gray-900 flex ml-[auto] mr-[auto] rounded-[15px]'>
             <div className='xl:w-[40vw] border-[15px] flex ml-[auto] mr-[auto] justify-center rounded-[15px] bg-white py-[20px] shadow-inner shadow-gray-900'>
                 
                 <form className=''>
-                <div className='text-center text-[40px] py-[20px]' data-aos="fade-up">Contact Us</div>
+                <div className='text-center text-[40px] py-[20px]' >Contact Us</div>
                     <div className='pt-[20px]'>
                     <label>First Name</label><br/>
                     <input type="text" className='border-2 rounded-[10px] mt-[5px] xl:w-[300px] py-[7px] border-[5px] shadow-inner shadow-gray-500 bg-gray-100 p-4 focus:outline-none'/>

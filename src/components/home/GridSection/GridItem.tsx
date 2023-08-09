@@ -49,7 +49,7 @@ const GridItem = ({
   height = "h-[933px]",
 }: GridItemProps) => {
   return (
-    <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card">
+    <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card shadow-2xl shadow-gray-900">
       <div className={`grid_card__image ${height} w-full`}>
         <Image
           src={backgroundImage}

@@ -23,7 +23,7 @@ function Section1() {
             Our <span className="font-bold">STORY</span>
           </div>
           <div
-            className={`${kabel.variable} font-serif text-[#ec542d] text-8xl leading-none tracking-tighter`}
+            className={`${kabel.variable} font-serif text-[#ec542d] xl:text-[95.7px] leading-none tracking-tighter`}
           >
             OPENING A<br /> WORLD OF
             <br /> ADVENTURES
@@ -45,7 +45,7 @@ function Section1() {
             height={1068}
             width={704}
             //   fill
-            className="object-contain"
+            className="object-contain shadow-2xl shadow-gray-900"
           />
         </div>
       </div>
