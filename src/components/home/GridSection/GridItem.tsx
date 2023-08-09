@@ -49,7 +49,7 @@ const GridItem = ({
   height = "h-[933px]",
 }: GridItemProps) => {
   return (
-    <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card">
+    <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card shadow-2xl shadow-gray-900">
       <div className={`grid_card__image ${height} w-full`}>
         <Image
           src={backgroundImage}
@@ -63,12 +63,12 @@ const GridItem = ({
       <div className="absolute flex flex-col items-center justify-center w-full px-3 mt-32 grid_card__content">
         <div className="flex flex-col gap-3 text-center text_content mx-7 lg:mx-5 xl:mx-5 2xl:mx-8 ">
           <h1
-            className={`font-[800] text-white 2xl:text-[90px] xl:text-6xl ${kabel.variable} font-serif`}
+            className={`font-[800] text-white 2xl:text-[90px] xl:text-6xl ${kabel.variable} font-serif text-shadow`}
           >
             {title}
           </h1>
           <h3
-            className={`font-[510] leading-normal lg:text-3xl md:text-xl ${garamondNarrow.variable} font-sans`}
+            className={`font-[510] leading-normal lg:text-3xl md:text-xl ${garamondNarrow.variable} font-sans text-shadow`}
             style={{
               color: titleTextColour,
             }}
