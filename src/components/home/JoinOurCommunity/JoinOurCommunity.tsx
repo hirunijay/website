@@ -27,23 +27,23 @@ function JoinOurCommunity() {
 
   return (
     <div className={`text-center`}>
-      <div data-aos="fade-up" className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
+      <div data-aos="fade-up" className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl text-shadow">
         JOIN OUR COMMUNITY
       </div>
       <div  className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
-        <div data-aos="fade-right" className="text-[80px] font-[400] leading-[80px]">
+        <div data-aos="fade-right" className="text-[80px] font-[400] leading-[80px] text-shadow">
           Get the only
         </div>
         <br />
         <div data-aos="fade-left">
-        <span  className="text-[80px] font-[400] leading-[80px]">
+        <span  className="text-[80px] font-[400] leading-[80px] text-shadow">
           Newsletter&nbsp;
         </span>
-        <span className="text-[80px] font-[300] leading-[80px] italic">
+        <span className="text-[80px] font-[300] leading-[80px] italic text-shadow">
           worth
         </span>
         </div>
-        <div data-aos="fade-right" className="text-[80px] font-[300] leading-[80px] italic"><span>riding</span></div>
+        <div data-aos="fade-right" className="text-[80px] font-[300] leading-[80px] italic text-shadow"><span>riding</span></div>
         
       </div>
       <div>

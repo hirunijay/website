@@ -51,12 +51,12 @@ const sliderContent = [
 
 function PackageSlider() {
   return (
-    <div className="mx-0">
+    <div className="mx-0 ">
       <div className="py-20">
         <div className="flex flex-col gap-3 px-20 mb-20">
-          <div className="text-lg font-semibold">GET WET</div>
+          <div className="text-lg font-semibold text-shadow">GET WET</div>
           <div
-            className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter`}
+            className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter text-shadow`}
           >
             SUMMER TRIPS
           </div>
@@ -71,15 +71,15 @@ function PackageSlider() {
           // loop={true}
         >
           {sliderContent.map((item, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative flex flex-col items-center justify-center w-[1113px]">
+            <SwiperSlide key={index} >
+              <div className="relative flex flex-col items-center justify-center w-[1113px] ">
                 <div className="flex h-[790px] w-[1113px]">
                   <Image
                     src={item.image}
                     alt="package one"
                     height={790}
                     width={1113}
-                    className="object-cover overflow-hidden"
+                    className="object-cover overflow-hidden shadow-2xl shadow-gray-900"
                   />
                 </div>
                 <div className="absolute flex flex-col gap-5 text-center">
@@ -92,7 +92,7 @@ function PackageSlider() {
                     {item.subtitle}
                   </div>
                 </div>
-                <div className="flex h-20 text-lg text-black">
+                <div className="flex h-20 text-lg text-black pt-[20px]">
                   {item.description}
                 </div>
               </div>
