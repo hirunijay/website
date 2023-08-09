@@ -3,6 +3,7 @@ import HeroSection from "@/components/home/HeroSection/HeroSection";
 import JoinOurCommunity from "@/components/home/JoinOurCommunity/JoinOurCommunity";
 import PackageSlider from "@/components/home/PackageSlider/PackageSlider";
 import Testimonial from "@/components/home/Testimonial/Testimonial";
+import StickyButton from "@/components/shared/StickyButton";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <JoinOurCommunity />
       <GridSection />
       <PackageSlider />
+      <StickyButton />
       {/* <Testimonial /> */}
     </main>
   );
