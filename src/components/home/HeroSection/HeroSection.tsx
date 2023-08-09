@@ -1,8 +1,11 @@
-import React from "react";
+"use client"
+import React, {useEffect} from "react";
 import Image from "next/image";
 import HeroImg from "../../../../src/common/assets/images/homeImg/lift_day0-18.webp";
 import localFont from "next/font/local";
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -15,6 +18,38 @@ const garamondNarrow = localFont({
 });
 
 function HeroSection() {
+
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      // ... (other configuration settings)
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      // ... (other configuration settings)
+    });
+  }, []);
+
+
   return (
     <div className="relative mt-20 ">
       <div className="overflow-hidden h-[900px] 2xl:w-full flex justify-center items-center animate__animated animate__fadeInDown">
@@ -32,14 +67,14 @@ function HeroSection() {
         <div
           className={`text-3xl mb-4 xl:leading-[110px] ${kabel.variable} font-serif tracking-tight `}
         >
-          <div className="text-[6.4vw] font-[400] animate__animated animate__backInUp animate__delay-0.4s">LEARN</div>
+          <div className="text-[6.4vw] font-[400] animate__animated animate__backInUp animate__delay-0.4s text-shadow">LEARN</div>
           <br />
-          <div className="text-[10.66vw] font-[400] animate__animated animate__backInLeft animate__delay-0.6s">EFOIL</div>
+          <div className="text-[10.66vw] font-[400] animate__animated animate__backInLeft animate__delay-0.6s text-shadow">EFOIL</div>
           <br />
-          <div className="text-[10.66vw] font-[400] animate__animated animate__backInRight animate__delay-0.8s">SURF</div>
+          <div className="text-[10.66vw] font-[400] animate__animated animate__backInRight animate__delay-0.8s text-shadow">SURF</div>
           <br />
         </div>
-        <div className="text-[2vw] font-[400] text-black animate__animated animate__fadeInUpBig animate__delay-0.8s">Bacalar, Mexico</div>
+        <div className="text-[2vw] font-[400] text-black text-shadow" data-aos="fade-up">Bacalar, Mexico</div>
       </div>
     </div>
   );

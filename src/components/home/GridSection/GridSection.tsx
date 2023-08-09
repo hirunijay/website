@@ -14,7 +14,7 @@ function GridSection() {
     <div className="mx-0">
       <div className="w-full py-60">
         <div className="grid grid-cols-3 grid-rows-2 gap-6">
-          <div className="shadow-lg">
+          <div className="shadow-lg ">
             <GridItem
               title="SURF GOLF RETREAT"
               subtitle="Silver Coast, Portugal"
