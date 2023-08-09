@@ -72,8 +72,8 @@ function PackageSlider() {
         >
           {sliderContent.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="relative flex flex-col items-center justify-center w-[1113px]">
-                <div className="flex h-[790px] w-[1113px]">
+              <div className="relative flex flex-col items-center justify-center">
+                <div className="flex 2xl:h-[790px] xl:h-[600px]">
                   <Image
                     src={item.image}
                     alt="package one"
