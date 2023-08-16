@@ -54,9 +54,9 @@ function PackageSlider() {
     <div className="mx-0 ">
       <div className="py-20">
         <div className="flex flex-col gap-3 px-20 mb-20">
-          <div className="text-lg font-semibold text-shadow">GET WET</div>
+          <div className="text-lg font-semibold">GET WET</div>
           <div
-            className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter text-shadow`}
+            className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter`}
           >
             SUMMER TRIPS
           </div>
@@ -81,7 +81,7 @@ function PackageSlider() {
                     alt="package one"
                     height={790}
                     width={1113}
-                    className="object-cover overflow-hidden shadow-2xl shadow-gray-900"
+                    className="object-cover overflow-hidden"
                   />
                 </div>
                 <div className="absolute flex flex-col gap-5 text-center">

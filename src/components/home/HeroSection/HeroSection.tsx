@@ -52,7 +52,7 @@ function HeroSection() {
 
   return (
     <div className="relative mt-20 ">
-      <div className="overflow-hidden h-[900px] 2xl:w-full flex justify-center items-center animate__animated animate__fadeInDown">
+      <div className="overflow-hidden h-[900px] 2xl:w-full flex justify-center items-center">
         <div className="h-full w-full absolute z-[-1]">
           <Image
             src={HeroImg}
@@ -67,14 +67,14 @@ function HeroSection() {
         <div
           className={`text-3xl mb-4 xl:leading-[110px] ${kabel.variable} font-serif tracking-tight `}
         >
-          <div className="text-[6.4vw] font-[400] animate__animated animate__backInUp animate__delay-0.4s text-shadow">LEARN</div>
+          <div className="text-[6.4vw] font-[400] ">LEARN</div>
           <br />
-          <div className="text-[10.66vw] font-[400] animate__animated animate__backInLeft animate__delay-0.6s text-shadow">EFOIL</div>
+          <div className="text-[10.66vw] font-[400] ">EFOIL</div>
           <br />
-          <div className="text-[10.66vw] font-[400] animate__animated animate__backInRight animate__delay-0.8s text-shadow">SURF</div>
+          <div className="text-[10.66vw] font-[400] ">SURF</div>
           <br />
         </div>
-        <div className="text-[2vw] font-[400] text-black text-shadow" data-aos="fade-up">Bacalar, Mexico</div>
+        <div className="text-[2vw] font-[400] text-black">Bacalar, Mexico</div>
       </div>
     </div>
   );

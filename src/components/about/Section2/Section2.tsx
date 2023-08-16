@@ -59,7 +59,7 @@ function Section2() {
             height={1527}
             width={1096}
             // fill
-            className="object-contain shadow-2xl shadow-gray-900"
+            className="object-contain"
           />
         </div>
       </div>

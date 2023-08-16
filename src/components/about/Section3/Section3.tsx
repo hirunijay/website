@@ -10,7 +10,7 @@ function Section3() {
     <div className="mx-20 my-40">
       <div className="w-full py-10">
         <div className="grid grid-cols-2 grid-rows-6 gap-20">
-          <div className="row-span-6 shadow-2xl shadow-gray-900">
+          <div className="row-span-6">
             <GridItem
               title=""
               subtitle=""
@@ -29,7 +29,7 @@ function Section3() {
               
             />
           </div>
-          <div className="row-span-5 shadow-2xl shadow-gray-900">
+          <div className="row-span-5 ">
             <GridItem
               title=""
               subtitle=""

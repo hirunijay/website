@@ -27,32 +27,32 @@ function JoinOurCommunity() {
 
   return (
     <div className={`text-center`}>
-      <div data-aos="fade-up" className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl text-shadow">
+      <div className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
         JOIN OUR COMMUNITY
       </div>
       <div  className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
-        <div data-aos="fade-right" className="text-[80px] font-[400] leading-[80px] text-shadow">
+        <div className="text-[80px] font-[400] leading-[80px]">
           Get the only
         </div>
         <br />
-        <div data-aos="fade-left">
-        <span  className="text-[80px] font-[400] leading-[80px] text-shadow">
+        <div>
+        <span  className="text-[80px] font-[400] leading-[80px]">
           Newsletter&nbsp;
         </span>
-        <span className="text-[80px] font-[300] leading-[80px] italic text-shadow">
+        <span className="text-[80px] font-[300] leading-[80px] italic">
           worth
         </span>
         </div>
-        <div data-aos="fade-right" className="text-[80px] font-[300] leading-[80px] italic text-shadow"><span>riding</span></div>
+        <div  className="text-[80px] font-[300] leading-[80px] italic"><span>riding</span></div>
         
       </div>
       <div>
-        <div data-aos="fade-up"
+        <div 
      data-aos-anchor-placement="center-bottom" className="flex justify-center mt-16">
           <input
             type="email"
             placeholder="Your email address"
-            className="border-t-0 border-b border-gray-300 focus:outline-none focus:ring focus:border-blue-500"
+            className="border-t-0 border-b border-gray-300 focus:outline-none "
           />
           <button
             type="submit"
