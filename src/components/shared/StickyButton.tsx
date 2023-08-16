@@ -19,7 +19,7 @@ function StickyButton() {
       <div
         className={`fixed z-50 bottom-10 right-[50%] ${open ? "hidden" : ""}`}
       >
-        <div className="flex flex-row items-center h-20 py-10 translate-x-1/2 rounded-md shadow-2xl bg-zinc-950 w-96 shadow-gray-900">
+        <div className="flex flex-row items-center h-20 py-10 translate-x-1/2 rounded-md shadow-md bg-zinc-950 w-96">
           {options.map((item, index) => (
             <div
               key={index}
@@ -27,7 +27,7 @@ function StickyButton() {
                 onOpenModal();
                 setTitle(item.text);
               }}
-              className="flex items-center justify-center flex-1 text-lg text-white border-r h-14 border-r-gray-500 hover:cursor-pointer"
+              className="flex items-center justify-center flex-1 text-lg text-white border-r h-14 border-r-gray-500 hover:cursor-pointer last-of-type:border-r-0"
             >
               <p>
                 Choose <span className="italic">{item.text}</span>
@@ -51,7 +51,7 @@ function StickyButton() {
           },
         }}
       >
-        <div className="flex flex-col gap-10 bg-zinc-950 h-[80%] shadow-lg py-10 px-20 rounded-md w-full overflow-hidden shadow-gray-900">
+        <div className="flex flex-col gap-10 bg-zinc-950 h-[80%] shadow-md py-10 px-20 rounded-md w-full overflow-hidden">
           <div className="text-2xl text-center text-white">
             <span className="italic">Search for </span>
             {title}
@@ -65,7 +65,7 @@ function StickyButton() {
           </div>
         </div>
         <div
-          className="absolute flex items-center justify-center mt-5 text-4xl translate-x-1/2 bg-white rounded-full 2xl:w-20 2xl:h-20 xl:w-15 xl:h-15 text-zinc-950 right-1/2 hover:cursor-pointer shadow-xl shadow-gray-900"
+          className="absolute flex items-center justify-center mt-5 text-4xl translate-x-1/2 bg-white rounded-full shadow-lg 2xl:w-20 2xl:h-20 xl:w-15 xl:h-15 text-zinc-950 right-1/2 hover:cursor-pointer"
           onClick={onCloseModal}
         >
           <IoMdClose />
