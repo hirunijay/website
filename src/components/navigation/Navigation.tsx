@@ -18,7 +18,7 @@ function Navigation() {
       <div className="hidden lg:block">
         <Navbar />
       </div>
-      <div className="flex flex-row items-center bg-white border-b border-slate-200 navbar h-14 lg:hidden">
+      <div className="flex flex-row items-center px-2 bg-white border-b border-slate-200 navbar h-14 lg:hidden">
         <Link
           href={"/"}
           className="flex items-center justify-start flex-1 h-full"
