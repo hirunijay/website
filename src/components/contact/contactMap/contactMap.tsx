@@ -10,7 +10,7 @@ function ContactMap () {
       title="Google Map"
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
-      className='border-[15px] shadow-2xl shadow-gray-900 mb-[100px] rounded-[15px]'
+      className='border-[15px] mb-[100px] rounded-[15px]'
     />
         </div>
     )

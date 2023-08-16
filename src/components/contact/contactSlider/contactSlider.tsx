@@ -61,7 +61,7 @@ function ContactSlider() {
       }, []);
     
     return(
-        <div className='border-[15px] border-gray-50 h-[600px] w-[70vw] flex flex-col ml-auto mr-auto items-center mt-[10vh] mb-[5vh] rounded-[30px] bg-white shadow-2xl shadow-gray-900 mb-[100px]'>
+        <div className='border-[15px] border-gray-50 h-[600px] w-[70vw] flex flex-col ml-auto mr-auto items-center mt-[10vh] mb-[5vh] rounded-[30px] bg-white mb-[100px]'>
             
             <Swiper
         spaceBetween={30}
