@@ -11,7 +11,6 @@ import { Pagination } from "swiper";
 //assests
 import pkg1 from "@/common/assets/images/packageSlider/surfgirl.webp";
 import pkg2 from "@/common/assets/images/packageSlider/ocean.webp";
-import dynamic from "next/dynamic";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
