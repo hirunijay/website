@@ -1,16 +1,17 @@
 "use client";
 import React from "react";
 import GridItem from "./GridItem";
-import { useRef, useState } from "react";
+import localFont from "next/font/local";
 import Image from "next/image";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-// import required modules
 import { EffectCards } from "swiper";
+
+const kabel = localFont({
+  src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
+  variable: "--font-kabel-bold",
+});
 
 //images
 import Img1 from "../../../common/assets/images/GridImages/image1.webp";
@@ -25,20 +26,24 @@ const packageContent = [
     image: Img1,
     title: (
       <>
-        ALAIA
+        SURF
         <br />
-        MENTAWAI
+        GOLF
+        <br />
+        RETREAT
       </>
     ),
-    subtitle: "Mentawai Island, Indonesia",
+    subtitle: "Silver Coast, Portugal",
   },
   {
     image: Img2,
     title: (
       <>
         LEARN
-        <br /> EFOIL
-        <br /> SURF
+        <br />
+        EFOIL
+        <br />
+        SURF
       </>
     ),
     subtitle: "Bacala, Mexico",
@@ -47,34 +52,53 @@ const packageContent = [
     image: Img3,
     title: (
       <>
-        LEARN
-        <br /> EFOIL
-        <br /> SURF
+        SANDS
+        <br />
+        OF
+        <br />
+        GOBI
       </>
     ),
-    subtitle: "Bacala, Mexico",
+    subtitle: "Gobi Deseart, Mongolia",
   },
   {
     image: Img4,
     title: (
       <>
-        LEARN
-        <br /> EFOIL
-        <br /> SURF
+        MID
+        <br />
+        SUMMER
+        <br />
+        GOLF
+        <br />
+        CLUB
       </>
     ),
-    subtitle: "Bacala, Mexico",
+    subtitle: "Ahus, Sweden",
   },
   {
     image: Img5,
     title: (
       <>
-        LEARN
-        <br /> EFOIL
-        <br /> SURF
+        EL CAMINO
+        <br />
+        E-BIKE
       </>
     ),
-    subtitle: "Bacala, Mexico",
+    subtitle: "Galicia Span",
+  },
+  {
+    image: Img6,
+    title: (
+      <>
+        PARA
+        <br />
+        MOTOR
+        <br />
+        SAFARI
+      </>
+    ),
+    subtitle: "Skeleton Bay, Namibia",
   },
 ];
 
@@ -136,7 +160,7 @@ function GridSection() {
           <div className="shadow-lg">
             <GridItem
               title="MID SUMMER GOLF CLUB"
-              subtitle="Ahus Sweden"
+              subtitle="Ahus, Sweden"
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
@@ -205,7 +229,7 @@ function GridSection() {
                   </div>
                   <div className="absolute flex flex-col gap-5 text-center">
                     <div
-                      className={`font-serif font-bold text-white text-4xl leading-none tracking-tighter`}
+                      className={`${kabel.variable} font-serif font-bold text-white text-4xl leading-none tracking-tighter`}
                     >
                       {item.title}
                     </div>
