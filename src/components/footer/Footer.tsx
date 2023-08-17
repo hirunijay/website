@@ -29,7 +29,9 @@ function Footer() {
             <ul className="md:text-[22px] text-xl font-[300]">
               {footerLinks.map((item, index) => (
                 <Link key={index} href={item.path}>
-                  <li className="mt-3">{item.text}</li>
+                  <li className="mt-3 footer-links md:hover:text-[21px]">
+                    {item.text}
+                  </li>
                 </Link>
               ))}
             </ul>
