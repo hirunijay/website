@@ -17,9 +17,9 @@ const garamondNarrow = localFont({
 function Section1() {
   return (
     <div className="mx-20">
-      <div className="flex flex-row">
+      <div className="flex xl:flex-row lg:flex-col">
         <div className="flex-col flex-1">
-          <div className={`text-lg`}>
+          <div className={`text-[16px]`}>
             Our <span className="font-bold">STORY</span>
           </div>
           <div
