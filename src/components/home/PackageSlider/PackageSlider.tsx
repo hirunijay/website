@@ -5,7 +5,9 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Navigation } from "swiper";
+import { Pagination } from "swiper";
 //assests
 import pkg1 from "@/common/assets/images/packageSlider/surfgirl.webp";
 import pkg2 from "@/common/assets/images/packageSlider/ocean.webp";
@@ -52,11 +54,11 @@ const sliderContent = [
 function PackageSlider() {
   return (
     <div className="mx-0 ">
-      <div className="py-20">
-        <div className="flex flex-col gap-3 px-20 mb-20">
-          <div className="text-lg font-semibold">GET WET</div>
+      <div className="py-12 md:py-20">
+        <div className="flex flex-col justify-center gap-3 px-10 mb-10 md:mb-20 md:px-20">
+          <div className="text-base font-semibold md:text-lg">GET WET</div>
           <div
-            className={`${kabel.variable} font-serif font-bold text-black text-6xl leading-none tracking-tighter`}
+            className={`${kabel.variable} font-serif font-bold text-black md:text-6xl text-4xl leading-none tracking-tighter`}
           >
             SUMMER TRIPS
           </div>
@@ -65,17 +67,32 @@ function PackageSlider() {
           slidesPerView="auto"
           className="packageSlider"
           navigation={true}
-          modules={[Navigation]}
+          modules={[Navigation, Pagination]}
+          pagination={{ clickable: true }}
           spaceBetween={0}
           freeMode={true}
           // loop={true}
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: "auto",
+            },
+          }}
         >
           {sliderContent.map((item, index) => (
-
             <SwiperSlide key={index}>
               <div className="relative flex flex-col items-center justify-center">
-                <div className="flex 2xl:h-[790px] xl:h-[600px]">
-
+                <div className="flex 2xl:h-[790px] xl:h-[600px] h-96">
                   <Image
                     src={item.image}
                     alt="package one"
@@ -86,15 +103,15 @@ function PackageSlider() {
                 </div>
                 <div className="absolute flex flex-col gap-5 text-center">
                   <div
-                    className={`${kabel.variable} font-serif font-bold text-white text-8xl leading-none tracking-tighter`}
+                    className={`${kabel.variable} font-serif font-bold text-white lg:text-8xl text-4xl leading-none tracking-tighter`}
                   >
                     {item.title}
                   </div>
-                  <div className="text-5xl font-[400] text-black">
+                  <div className="lg:text-5xl text-2xl font-[400] text-black">
                     {item.subtitle}
                   </div>
                 </div>
-                <div className="flex h-20 text-lg text-black pt-[20px]">
+                <div className="flex md:h-20 h-24 lg:text-lg text-sm text-black pt-[20px] text-center md:text-left">
                   {item.description}
                 </div>
               </div>
