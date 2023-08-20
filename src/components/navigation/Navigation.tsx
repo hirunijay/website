@@ -18,10 +18,10 @@ function Navigation() {
       <div className="hidden lg:block">
         <Navbar />
       </div>
-      <div className="flex flex-row items-center bg-white border-b border-slate-200 navbar h-14 lg:hidden">
+      <div className="flex flex-row items-center px-2 bg-white border-b border-slate-200 navbar h-14 lg:hidden">
         <Link
           href={"/"}
-          className="flex-1 flex justify-start h-full items-center"
+          className="flex items-center justify-start flex-1 h-full"
         >
           <div className="h-[25px] w-[125px] flex items-center">
             <Image
@@ -32,7 +32,7 @@ function Navigation() {
             />
           </div>
         </Link>
-        <div className="flex-1 flex justify-end">
+        <div className="flex justify-end flex-1 p-2">
           <GiHamburgerMenu size={30} onClick={toggleDrawer} />
         </div>
         <MobileNavbar isOpen={isOpen} toggleDrawer={toggleDrawer} />

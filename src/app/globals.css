@@ -19,6 +19,9 @@ html {
   .swiper-slide {
     width: 59%;
     margin-left: 40px;
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+    }
   }
 
   .swiper-button-next,
@@ -33,6 +36,17 @@ html {
       font-size: 20px !important;
       font-weight: 900;
     }
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    padding-top: 6vh;
+    @media only screen and (min-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -43,3 +57,9 @@ html {
 .text-shadow {
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+.footer-links:hover::after {
+  margin-left: 8px;
+  content: url(../../public/arrow.svg);
+}
+
