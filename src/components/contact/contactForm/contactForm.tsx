@@ -18,7 +18,7 @@ function ContactForm() {
           disableMutationObserver: false,
           debounceDelay: 50,
           throttleDelay: 99,
-          // ... (other configuration settings)
+          
         });
       }, []);
 
