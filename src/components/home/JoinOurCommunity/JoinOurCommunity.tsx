@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import localFont from "next/font/local";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const garamondNarrow = localFont({
   src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
@@ -10,49 +10,51 @@ const garamondNarrow = localFont({
 });
 
 function JoinOurCommunity() {
-  useEffect(() => {
-    AOS.init({
-      // Global settings:
-      disable: false,
-      startEvent: 'DOMContentLoaded',
-      initClassName: 'aos-init',
-      animatedClassName: 'aos-animate',
-      useClassNames: false,
-      disableMutationObserver: false,
-      debounceDelay: 50,
-      throttleDelay: 99,
-      // ... (other configuration settings)
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     // Global settings:
+  //     disable: false,
+  //     startEvent: 'DOMContentLoaded',
+  //     initClassName: 'aos-init',
+  //     animatedClassName: 'aos-animate',
+  //     useClassNames: false,
+  //     disableMutationObserver: false,
+  //     debounceDelay: 50,
+  //     throttleDelay: 99,
+  //     // ... (other configuration settings)
+  //   });
+  // }, []);
 
   return (
     <div className={`text-center`}>
-      <div data-aos="fade-up" className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl text-shadow">
+      <div className="text-[#ec542d] pt-20 font-[800] leading-[20px] font-mono text-3xl">
         JOIN OUR COMMUNITY
       </div>
-      <div  className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
-        <div data-aos="fade-right" className="text-[80px] font-[400] leading-[80px] text-shadow">
+      <div className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
+        <div className="lg:text-[80px] text-5xl font-[400] lg:leading-[80px] leading-[55px]">
           Get the only
         </div>
-        <br />
-        <div data-aos="fade-left">
-        <span  className="text-[80px] font-[400] leading-[80px] text-shadow">
-          Newsletter&nbsp;
-        </span>
-        <span className="text-[80px] font-[300] leading-[80px] italic text-shadow">
-          worth
-        </span>
+        <div>
+          <span className="lg:text-[80px] text-5xl font-[400] lg:leading-[80px] leading-[55px]">
+            Newsletter&nbsp;
+          </span>
+          <span className="lg:text-[80px] text-5xl font-[300] lg:leading-[80px] leading-[55px] italic">
+            worth
+          </span>
         </div>
-        <div data-aos="fade-right" className="text-[80px] font-[300] leading-[80px] italic text-shadow"><span>riding</span></div>
-        
+        <div className="lg:text-[80px] text-5xl font-[300] lg:leading-[80px] leading-[55px] italic">
+          <span>riding</span>
+        </div>
       </div>
       <div>
-        <div data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom" className="flex justify-center mt-16">
+        <div
+          data-aos-anchor-placement="center-bottom"
+          className="flex justify-center md:mt-16 mt-14"
+        >
           <input
             type="email"
             placeholder="Your email address"
-            className="border-t-0 border-b border-gray-300 focus:outline-none focus:ring focus:border-blue-500"
+            className="border-t-0 border-b border-gray-300 focus:outline-none "
           />
           <button
             type="submit"
