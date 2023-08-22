@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Libre_Franklin } from "next/font/google";
 
-import logo from "@/common/assets/images/homeImg/Final-Logo.png";
+import logo from "@/common/assets/images/homeImg/logo_updated.png";
 
 const franklin_font = Libre_Franklin({ subsets: ["latin"] });
 
@@ -36,7 +36,7 @@ function Navbar() {
         ))}
       </div>
       <Link href={"/"}>
-        <div className="h-[25px] w-[125px] flex items-center">
+        <div className="h-[30px] w-[125px] flex items-center">
           <Image
             src={logo}
             alt="main_logo"
