@@ -17,7 +17,7 @@ const garamondNarrow = localFont({
 function Section1() {
   return (
     <div className="relative">
-      <div className="overflow-hidden h-[1200.24px] 2xl:w-full flex justify-center items-center">
+      <div className="flex items-center justify-center overflow-hidden lg:h-[800px] h-96">
         <div className="h-full w-full absolute z-[-1]">
           <Image
             src={innerHeroImg}
