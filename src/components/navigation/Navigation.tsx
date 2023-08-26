@@ -23,7 +23,7 @@ function Navigation() {
           href={"/"}
           className="flex items-center justify-start flex-1 h-full"
         >
-          <div className="h-[25px] w-[125px] flex items-center">
+          <div className="h-[75px] w-[225px] flex items-center">
             <Image
               src={logo}
               alt="main_logo"

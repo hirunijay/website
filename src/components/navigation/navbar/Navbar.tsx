@@ -13,8 +13,8 @@ const leftMenu = [
 ];
 
 const rightMenu = [
-  { title: "Community", path: "/" },
   { title: "Support", path: "/" },
+  { title: "Contact Us", path: "/contactUs" },
 ];
 
 function Navbar() {
