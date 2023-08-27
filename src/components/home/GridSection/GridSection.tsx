@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
+import Link from "next/link";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -14,10 +15,10 @@ const kabel = localFont({
 });
 
 //images
-import Img1 from "../../../common/assets/images/GridImages/image1.webp";
-import Img2 from "../../../common/assets/images/GridImages/image2.webp";
-import Img3 from "../../../common/assets/images/GridImages/image3.webp";
-import Img4 from "../../../common/assets/images/GridImages/image4.webp";
+import Img1 from "../../../common/assets/images/GridImages/img1.jpg";
+import Img2 from "../../../common/assets/images/GridImages/img2.jpg";
+import Img3 from "../../../common/assets/images/GridImages/img3.jpg";
+import Img4 from "../../../common/assets/images/GridImages/img4.jpg";
 import Img5 from "../../../common/assets/images/GridImages/image5.webp";
 import Img6 from "../../../common/assets/images/GridImages/image6.webp";
 
@@ -108,9 +109,10 @@ function GridSection() {
       <div className="w-full py-20 lg:py-60">
         <div className="hidden grid-cols-3 grid-rows-2 gap-6 lg:grid">
           <div className="shadow-lg ">
+          <Link href="/Windswept">
             <GridItem
-              title="SURF GOLF RETREAT"
-              subtitle="Silver Coast, Portugal"
+              title="Windswept Mountain Bike Expedition"
+              subtitle="An Exquisite 5-Day adventure "
               titleFontStyle=""
               subtitleFontStyle=""
               subtitleTextSize=""
@@ -124,11 +126,14 @@ function GridSection() {
               descriptionTextColour="white"
               // height="h-[600px]"
             />
+            </Link>
           </div>
+          
           <div className="shadow-lg column_two">
+          <Link href="/TranquilParadise">
             <GridItem
-              title="LEARN EFOIL SURF"
-              subtitle="Bacala, Mexico"
+              title="Tranquil Paradise :- Whispers of Sporting Elegance "
+              subtitle="A Mesmeric 9-Day Visit"
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
@@ -140,11 +145,13 @@ function GridSection() {
               descriptionTextColour="white"
               // height="h-[600px]"
             />
+            </Link>
           </div>
           <div className="shadow-lg">
+            <Link href="/ASportingEuphoria">
             <GridItem
-              title="SANDS OF GOBI"
-              subtitle="Gobi Deseart, Mongolia"
+              title="A Sporting Euphoria "
+              subtitle="A 9-Day Odyssey"
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
@@ -156,11 +163,13 @@ function GridSection() {
               descriptionTextColour="white"
               // height="h-[600px]"
             />
+            </Link>
           </div>
           <div className="shadow-lg">
+            <Link href="/CyclingOdyssey">
             <GridItem
-              title="MID SUMMER GOLF CLUB"
-              subtitle="Ahus, Sweden"
+              title="Cycling Odyssey"
+              subtitle="A 5-Day Dream Sojourn"
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
@@ -172,6 +181,7 @@ function GridSection() {
               descriptionTextColour="white"
               // height="h-[600px]"
             />
+            </Link>
           </div>
           <div className="shadow-lg column_two">
             <GridItem

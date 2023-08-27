@@ -1,11 +1,12 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import HeroImg from "../../../../src/common/assets/images/homeImg/lift_day0-18.webp";
+import HeroImg from "../../../../src/common/assets/images/homeImg/homeHero.jpg";
 import localFont from "next/font/local";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -49,6 +50,7 @@ function HeroSection() {
   // }, []);
 
   return (
+    <Link href="/GolfingSerenity">
     <div className="relative lg:mt-20">
       <div className="overflow-hidden md:h-[900px] h-[500px] 2xl:w-full flex justify-center items-center">
         <div className="h-full w-full absolute z-[-1]">
@@ -65,22 +67,23 @@ function HeroSection() {
         <div
           className={`text-3xl mb-4 lg:leading-[120px] ${kabel.variable} font-serif tracking-tight `}
         >
-          <div className="md:text-[6.4vw] font-[400] text-5xl leading-6">
-            LEARN
+          {/* <div className="md:text-[6.4vw] font-[400] text-5xl leading-6">
+          Golfing 
+          </div> */}
+          <br />
+          <div className="md:text-[10.66vw] font-[400] text-5xl leading-6 drop-shadow-2xl shadow-gray-900">
+          Golfing
           </div>
           <br />
-          <div className="md:text-[10.66vw] font-[400] text-5xl leading-6">
-            EFOIL
-          </div>
-          <br />
-          <div className="md:text-[10.66vw] font-[400] text-5xl leading-6">
-            SURF
+          <div className="md:text-[10.66vw] font-[400] text-5xl leading-6 drop-shadow-2xl shadow-gray-900">
+          Serenity
           </div>
           <br />
         </div>
-        <div className="text-[2vw] font-[400] text-black">Bacalar, Mexico</div>
+        <div className="text-[2vw] font-[400] text-white drop-shadow-2xl shadow-gray-900">11 Days / 10 Nights Golf expedition </div>
       </div>
     </div>
+    </Link>
   );
 }
 
