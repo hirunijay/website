@@ -48,8 +48,13 @@ function ContactForm() {
       newErrors.from_email = 'Email is invalid';
     }
 
+    // if (!phone) {
+    //   newErrors.phone = 'Phone is required';
+    // } 
     if (!phone) {
       newErrors.phone = 'Phone is required';
+    } else if (!/^\d+$/.test(phone)) {
+      newErrors.phone = 'Phone must be a valid number';
     }
 
     if (!message) {

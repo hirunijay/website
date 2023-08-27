@@ -8,14 +8,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import { Pagination } from "swiper";
+import Link from "next/link";
 //assests
 //images
-import Img1 from "../../../common/assets/images/GridImages/image1.webp";
-import Img2 from "../../../common/assets/images/GridImages/image2.webp";
-import Img3 from "../../../common/assets/images/GridImages/image3.webp";
-import Img4 from "../../../common/assets/images/GridImages/image4.webp";
-import Img5 from "../../../common/assets/images/GridImages/image5.webp";
-import Img6 from "../../../common/assets/images/GridImages/image6.webp";
+import Img1 from "../../../common/assets/images/GridImages/img1.jpg";
+import Img2 from "../../../common/assets/images/GridImages/img2.jpg";
+import Img3 from "../../../common/assets/images/GridImages/img3.jpg";
+import Img4 from "../../../common/assets/images/GridImages/img4.jpg";
+import Img5 from "../../../common/assets/images/GridImages/homeHero.jpg";
+import Img6 from "../../../common/assets/images/GridImages/drone1.jpg";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -32,79 +33,62 @@ const sliderContent = [
     image: Img1,
     title: (
       <>
-        SURF
+        GOLFING
         <br />
-        GOLF
-        <br />
-        RETREAT
+        SERENITY
       </>
     ),
-    subtitle: "Silver Coast, Portugal",
+    subtitle: "11 Days / 10 Nights Golf expedition ",
+    link: "/GolfingSerenity"
   },
   {
     image: Img2,
     title: (
       <>
-        LEARN
+        Windswept Mountain 
         <br />
-        EFOIL
-        <br />
-        SURF
+        Bike Expedition
       </>
     ),
-    subtitle: "Bacala, Mexico",
+    subtitle: "An Exquisite 5-Day adventure ",
+    link: "/Windswept"
   },
   {
     image: Img3,
     title: (
       <>
-        SANDS
+        Tranquil 
         <br />
-        OF
-        <br />
-        GOBI
+        Paradise
+       
       </>
     ),
-    subtitle: "Gobi Deseart, Mongolia",
+    subtitle: "A Mesmeric 9-Day Visit",
+    link: "/TranquilParadise"
   },
   {
     image: Img4,
     title: (
       <>
-        MID
+        Sporting 
         <br />
-        SUMMER
-        <br />
-        GOLF
-        <br />
-        CLUB
+        Euphoria 
       </>
     ),
-    subtitle: "Ahus, Sweden",
+    subtitle: "A 9-Day Odyssey",
+    link:"/ASportingEuphoria"
   },
   {
     image: Img5,
     title: (
       <>
-        EL CAMINO
+        Cycling 
         <br />
-        E-BIKE
+        Odyssey
       </>
     ),
-    subtitle: "Galicia Span",
-  },
-  {
-    image: Img6,
-    title: (
-      <>
-        PARA
-        <br />
-        MOTOR
-        <br />
-        SAFARI
-      </>
-    ),
-    subtitle: "Skeleton Bay, Namibia",
+    subtitle: "A 5-Day Dream Sojourn",
+    link: "/CyclingOdyssey"
   },
 ];
 
@@ -148,6 +132,7 @@ function FooterSlider() {
         >
           {sliderContent.map((item, index) => (
             <SwiperSlide key={index}>
+              <Link href={item.link}>
               <div className="relative flex flex-col items-center justify-center">
                 <div className="flex 2xl:h-[790px] xl:h-[600px] h-96">
                   <Image
@@ -172,7 +157,9 @@ function FooterSlider() {
                   {item.description}
                 </div> */}
               </div>
+              </Link>
             </SwiperSlide>
+            
           ))}
         </Swiper>
       </div>

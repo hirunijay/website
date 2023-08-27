@@ -1,19 +1,93 @@
 "use client";
-import React from "react";
+import React,{ useEffect, useState } from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { IoMdClose } from "react-icons/io";
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const options = [
   { text: "Inquire Now", path: "/" },
   //   { text: "Ride", path: "/" },
 ];
 
+
+
 function FloatButton() {
   const [open, setOpen] = React.useState(false);
   const [title, setTitle] = React.useState("");
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
+
+
+  const form = useRef();
+const [errors, setErrors] = useState({});
+
+const validateForm = () => {
+  const firstName = form.current.first_name.value;
+  const lastName = form.current.last_name.value;
+  const email = form.current.from_email.value;
+  const phone = form.current.phone.value;
+  const message = form.current.message.value;
+
+  const newErrors = {};
+
+  if (!firstName) {
+    newErrors.first_name = 'First name is required';
+  }
+
+  if (!lastName) {
+    newErrors.last_name = 'Last name is required';
+  }
+
+  if (!email) {
+    newErrors.from_email = 'Email is required';
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
+    newErrors.from_email = 'Email is invalid';
+  }
+
+  // if (!phone) {
+  //   newErrors.phone = 'Phone is required';
+  // } 
+  if (!phone) {
+    newErrors.phone = 'Phone is required';
+  } else if (!/^\d+$/.test(phone)) {
+    newErrors.phone = 'Phone must be a valid number';
+  }
+
+  if (!message) {
+    newErrors.message = 'Message is required';
+  }
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (validateForm()) {
+    emailjs
+      .sendForm(
+        'service_0lhyspu',
+        'template_zfsrlnc',
+        form.current,
+        'daFdzriOxxzSUwK_d'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success('Message sent successfully.');
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error('Message is not sent successfully.');
+        }
+      );
+  }
+};
+
   return (
     <>
       <div
@@ -53,7 +127,7 @@ function FloatButton() {
             <span className="italic">Inquire Now </span>
             {title}
           </div> */}
-          <form className="flex flex-col rounded-2xl">
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col rounded-2xl">
             <div className="flex items-center justify-center font-medium lg:text-[40px] text-2xl">
               Inquire Now
             </div>
@@ -62,40 +136,70 @@ function FloatButton() {
               <br />
               <input
                 type="text"
-                className="border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none"
+                name='first_name'
+                className={`border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none ${
+                  errors.first_name ? 'border-red-500' : ''
+                }`}
               />
+              {errors.first_name && (
+                <p className='text-red-500 text-sm'>{errors.first_name}</p>
+              )}
             </div>
             <div className="pt-[20px]">
               <label>Last Name</label>
               <br />
               <input
                 type="text"
-                className="border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none"
+                name='last_name'
+                className={`border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none ${
+                  errors.last_name ? 'border-red-500' : ''
+                }`}
               />
+              {errors.last_name && (
+                <p className='text-red-500 text-sm'>{errors.last_name}</p>
+              )}
             </div>
             <div className="pt-[20px]">
               <label>Email</label>
               <br />
               <input
                 type="text"
-                className="border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none"
+                name='from_email'
+                className={`border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none ${
+                  errors.from_email ? 'border-red-500' : ''
+                }`}
               />
+              {errors.from_email && (
+                <p className='text-red-500 text-sm'>{errors.from_email}</p>
+              )}
             </div>
             <div className="pt-[20px]">
               <label>Phone</label>
               <br />
               <input
                 type="text"
-                className="border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none"
+                name='phone'
+                className={`border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none ${
+                  errors.phone ? 'border-red-500' : ''
+                }`}
               />
+              {errors.phone && (
+                <p className='text-red-500 text-sm'>{errors.phone}</p>
+              )}
             </div>
             <div className="pt-[20px]">
               <label>Message</label>
               <br />
-              <input
-                type="text"
-                className="border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none "
+              <textarea
+                // type="text"
+                name='message'
+                className={`border rounded-[10px] mt-[5px] xl:w-[300px] w-full py-[7px] bg-gray-100 p-4 focus:outline-none ${
+                  errors.message ? 'border-red-500' : ''
+                }`}
               />
+              {errors.message && (
+                <p className='text-red-500 text-sm'>{errors.message}</p>
+              )}
             </div>
             <button className="text-center border bg-red flex mx-[auto] px-8 py-1 text-lg font-medium mt-[50px] mb-[20px] rounded-[10px] bg-gray-100 hover:bg-gray-200">
               Submit

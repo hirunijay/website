@@ -12,7 +12,7 @@ function ContactUs() {
       <ContactHeader/>
       <ContactForm/>
       <ContactSlider/>
-      <ContactMap/>
+      {/* <ContactMap/> */}
       <ToastContainer />
     </div>
   );
