@@ -5,7 +5,7 @@ import { Modal } from "react-responsive-modal";
 import { IoMdClose } from "react-icons/io";
 
 const options = [
-  { text: "Book Now", path: "/" },
+  { text: "Inquire Now", path: "/" },
   //   { text: "Ride", path: "/" },
 ];
 
@@ -19,7 +19,7 @@ function FloatButton() {
       <div
         className={`fixed z-50 bottom-10 right-[0%] ${open ? "hidden" : ""}`}
       >
-        <div className="flex flex-row items-center md:py-10 translate-x-6 bg-gray-300 rounded-md shadow-md md:h-[30px] md:w-[170px] sm:w-[150px] sm:mr-[300px] sm:px-[5px]" style={{marginRight:"42px"}}>
+        <div className="flex flex-row items-center md:py-8 translate-x-6 bg-gray-300 rounded-md shadow-md md:h-[30px] md:w-[170px] sm:w-[150px] sm:mr-[300px] sm:px-[5px]" style={{marginRight:"42px"}}>
           {options.map((item, index) => (
             <div
               key={index}
@@ -48,7 +48,7 @@ function FloatButton() {
           },
         }}
       >
-        <div className="flex flex-col w-full h-full gap-10 px-20 py-10 overflow-auto bg-white rounded-md scrollbar-thin scrollbar-thumb-gray-300 scrollbar-thumb-rounded">
+        <div className="flex flex-col w-full h-full gap-10 md:px-20 sm:px-[15px] py-10 overflow-auto bg-white rounded-md scrollbar-thin scrollbar-thumb-gray-300 scrollbar-thumb-rounded">
           {/* <div className="text-2xl text-center text-white">
             <span className="italic">Inquire Now </span>
             {title}

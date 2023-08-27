@@ -1,6 +1,6 @@
 import React from "react";
 import localFont from "next/font/local";
-import detailImage from "@/common/assets/images/innerPageImage/packageInside.webp";
+import detailImage from "@/common/assets/images/GridImages/img1.jpg";
 import Image from "next/image";
 
 const kabel = localFont({
@@ -86,7 +86,7 @@ const detailsContent = [
 function DetailSection() {
   return (
     <div className="my-40">
-      <div className="md:grid md:grid-cols-2 xl:h-[600px] md:h-[500px]">
+      <div className="md:grid md:grid-cols-2 xl:h-900px] md:h-[900px]">
         <div className="h-full overflow-hidden">
           {" "}
           <Image
@@ -99,8 +99,8 @@ function DetailSection() {
             style={{ objectPosition: "bottom" }}
           />
         </div>
-        <div className="grid flex-1 gap-8 mx-10 max-h-[600px] overflow-auto scrollbar-none">
-          <div className={`${garamondNarrow.variable} text-xl flex pt-3`}><p>{headerContent.content}</p></div>
+        <div className="grid flex-1 gap-8 mx-10 max-h-[900px] overflow-auto scrollbar-none">
+          {/* <div className={`${garamondNarrow.variable} text-xl flex pt-3`}><p>{headerContent.content}</p></div> */}
           {detailsContent.map((item, index) => (
             <div className="flex flex-col">
               <div
