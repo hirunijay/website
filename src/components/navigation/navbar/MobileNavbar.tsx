@@ -9,7 +9,7 @@ import "react-modern-drawer/dist/index.css";
 const menu = [
   { title: "Adventures", path: "/adventure" },
   { title: "About Us", path: "/about" },
-  { title: "Community", path: "/" },
+  { title: "Contact Us", path: "/contactUs" },
   { title: "Support", path: "/" },
 ];
 
