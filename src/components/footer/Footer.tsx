@@ -19,7 +19,7 @@ function Footer() {
   ];
 
   return (
-    <div className="flex flex-col w-full text-white bg-black">
+    <div className="flex flex-col w-full text-white bg-black xl:pl-[50px] md:pr-[50px] sm:justify-center">
       <div className="container mx-auto">
         <div className="pt-[150px]">
           <hr />

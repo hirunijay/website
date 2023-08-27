@@ -17,9 +17,9 @@ function FloatButton() {
   return (
     <>
       <div
-        className={`fixed z-50 bottom-10 right-[10%] ${open ? "hidden" : ""}`}
+        className={`fixed z-50 bottom-10 right-[0%] ${open ? "hidden" : ""}`}
       >
-        <div className="flex flex-row items-center py-10 translate-x-1/2 bg-gray-300 rounded-md shadow-md w-60 h-14 md:h-20 md:w-60">
+        <div className="flex flex-row items-center md:py-10 translate-x-6 bg-gray-300 rounded-md shadow-md md:h-[30px] md:w-[170px] sm:w-[150px] sm:mr-[300px] sm:px-[5px]" style={{marginRight:"42px"}}>
           {options.map((item, index) => (
             <div
               key={index}
@@ -29,7 +29,7 @@ function FloatButton() {
               }}
               className="flex items-center justify-center flex-1 h-12 font-mono text-2xl text-gray-900 border-r md:h-14 border-r-gray-500 hover:cursor-pointer last-of-type:border-r-0"
             >
-              <p>{item.text} </p>
+              <p className="px-[5px]">{item.text} </p>
             </div>
           ))}
         </div>
