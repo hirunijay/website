@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navbar from "./navbar/Navbar";
 import MobileNavbar from "./navbar/MobileNavbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "@/common/assets/images/homeImg/Final-Logo.png";
+import navlogo from "@/common/assets/images/homeImg/logo_updated.png";
 
 function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -25,7 +25,7 @@ function Navigation() {
         >
           <div className="h-[75px] w-[225px] flex items-center">
             <Image
-              src={logo}
+              src={navlogo}
               alt="main_logo"
               placeholder="blur"
               className="object-contain w-auto p-2"

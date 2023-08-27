@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const garamondNarrow = localFont({
   src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
@@ -49,6 +50,7 @@ const GridItem = ({
   height = "h-[933px]",
 }: GridItemProps) => {
   return (
+    <Link href="/GolfingSerenity">
     <div className="relative flex flex-col justify-start h-full overflow-hidden grid_card">
       <div className={`grid_card__image ${height} w-full`}>
         <Image
@@ -95,6 +97,7 @@ const GridItem = ({
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
