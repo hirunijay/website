@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import HeroImg from "../../../../src/common/assets/images/homeImg/homeHero.jpg";
+import HeroImg from "../../../../src/common/assets/images/homeImg/mainBanner.jpg";
 import localFont from "next/font/local";
 import "animate.css";
 import AOS from "aos";

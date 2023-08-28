@@ -128,7 +128,7 @@ const sendEmail = (e) => {
             {title}
           </div> */}
           <form ref={form} onSubmit={sendEmail} className="flex flex-col rounded-2xl">
-            <div className="flex items-center justify-center font-medium lg:text-[40px] text-2xl">
+            <div className="flex items-center justify-center font-medium lg:text-[36px] text-xl">
               Inquire Now
             </div>
             <div className="pt-[20px]">

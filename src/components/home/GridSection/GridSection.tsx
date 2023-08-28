@@ -15,9 +15,9 @@ const kabel = localFont({
 });
 
 //images
-import Img1 from "../../../common/assets/images/GridImages/img1.jpg";
+import Img1 from "../../../common/assets/images/GridImages/CyclingOdyssey.jpg";
 import Img2 from "../../../common/assets/images/GridImages/img2.jpg";
-import Img3 from "../../../common/assets/images/GridImages/img3.jpg";
+import Img3 from "../../../common/assets/images/GridImages/SportingEuphoria.jpg";
 import Img4 from "../../../common/assets/images/GridImages/img4.jpg";
 import Img5 from "../../../common/assets/images/GridImages/image5.webp";
 import Img6 from "../../../common/assets/images/GridImages/image6.webp";
@@ -132,7 +132,7 @@ function GridSection() {
           <div className="shadow-lg column_two">
           <Link href="/TranquilParadise">
             <GridItem
-              title="Tranquil Paradise :- Whispers of Sporting Elegance "
+              title="Whispers of Sporting Elegance "
               subtitle="A Mesmeric 9-Day Visit"
               subtitleTextSize=""
               descLineHeight=""
@@ -186,7 +186,7 @@ function GridSection() {
           <div className="shadow-lg column_two">
             <GridItem
               title="EL CAMINO E-BIKE"
-              subtitle="Galicia Span"
+              subtitle=" "
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
@@ -202,7 +202,7 @@ function GridSection() {
           <div className="shadow-lg">
             <GridItem
               title="PARA MOTOR SAFARI"
-              subtitle="Skeleton Bay, Namibia"
+              subtitle=""
               subtitleTextSize=""
               descLineHeight=""
               descFontWeight=""
