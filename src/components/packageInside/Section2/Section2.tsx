@@ -1,5 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
+import Image from "next/image";
+import innerHeroImg from "../../../common/assets/images/innerPageImage/inner_img1.webp";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -13,37 +15,22 @@ const garamondNarrow = localFont({
 
 function Section2() {
   return (
-    <div className="my-20 mx-80">
-      <div className="flex flex-col">
-        <div
-          className={`${kabel.variable} font-serif text-6xl tracking-tighter text-[#ddd4c4]`}
-        >
-          FLY OVER WATER
-        </div>
-        <div className="flex flex-row my-20">
-          <div className="flex-col flex-1 gap-2">
-            <ul className="text-xl list-disc">
-              <li className="font-bold">Level</li>
-              <li className="font-bold">Period</li>
-              <li className="font-bold">Group</li>
-              <li className="font-bold">
-                Food & <br />
-                Accomodation
-              </li>
-              <li className="font-bold">itinerary</li>
-            </ul>
-          </div>
-          <div className="flex-1 text-4xl">
-            Join us on an electric Surf Foiling Tour in Mexico. Learn to surf
-            with electric foils and discover Mexico's blue lagoon, its
-            ecosystem, and the beauty of the area. The perfect combo to get away
-            from your daily life, relax and explore the best things Mexico has
-            to offer with our local guides and eFoil instructors.
-          </div>
-        </div>
+    <div>
+      <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia aut, ut itaque nihil adipisci velit porro minima facere, tenetur iste iusto eligendi iure fugit voluptas praesentium quas tempora vitae laudantium? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint possimus ea obcaecati, molestiae exercitationem commodi at dolore nostrum cumque cupiditate laboriosam? Quod fugit explicabo fuga alias voluptatibus placeat dolores odio?</div>
+      <div>
+      <Image
+             src={innerHeroImg}
+             alt="Picture of the author"
+             placeholder="blur"
+             layout="fill"
+             objectFit="cover"
+           />
       </div>
     </div>
   );
 }
 
 export default Section2;
+
+
+ 

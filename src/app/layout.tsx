@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navigation from "@/components/navigation/Navigation";
 import "./globals.css";
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
@@ -7,8 +7,8 @@ import Footer from "@/components/footer/Footer";
 const Garamond = EB_Garamond({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sandy Beach",
-  description: "This is a new project",
+  title: "Tranquil Paradise: Whispers of Sporting Elegance",
+  description: "Tranquil Paradise: Whispers of Sporting Elegance",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navigation />
         {children}
         <Footer />
       </body>

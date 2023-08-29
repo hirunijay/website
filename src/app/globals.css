@@ -2,29 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
 
 /* grid column two */
 .column_two {
@@ -37,6 +19,9 @@ body {
   .swiper-slide {
     width: 59%;
     margin-left: 40px;
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+    }
   }
 
   .swiper-button-next,
@@ -51,5 +36,30 @@ body {
       font-size: 20px !important;
       font-weight: 900;
     }
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination {
+    position: relative;
+    padding-top: 6vh;
+    @media only screen and (min-width: 767px) {
+      display: none;
+    }
   }
 }
+
+.Modal {
+  background-color: black;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.footer-links:hover::after {
+  margin-left: 8px;
+  content: url(../../public/arrow.svg);
+}
+
