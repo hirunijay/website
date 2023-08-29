@@ -7,91 +7,92 @@ import { toast } from 'react-toastify';
 import React, { useEffect, useState } from 'react';
 
 function ContactForm() {
-    useEffect(() => {
-        AOS.init({
-          // Global settings:
-          disable: false,
-          startEvent: 'DOMContentLoaded',
-          initClassName: 'aos-init',
-          animatedClassName: 'aos-animate',
-          useClassNames: false,
-          disableMutationObserver: false,
-          debounceDelay: 50,
-          throttleDelay: 99,
+  //   useEffect(() => {
+  //       AOS.init({
+  //         // Global settings:
+  //         disable: false,
+  //         startEvent: 'DOMContentLoaded',
+  //         initClassName: 'aos-init',
+  //         animatedClassName: 'aos-animate',
+  //         useClassNames: false,
+  //         disableMutationObserver: false,
+  //         debounceDelay: 50,
+  //         throttleDelay: 99,
           
-        });
-      }, []);
+  //       });
+  //     }, []);
 
-      const form = useRef();
-  const [errors, setErrors] = useState({});
+  //     const form = useRef();
+  // const [errors, setErrors] = useState({});
 
-  const validateForm = () => {
-    const firstName = form.current.first_name.value;
-    const lastName = form.current.last_name.value;
-    const email = form.current.from_email.value;
-    const phone = form.current.phone.value;
-    const message = form.current.message.value;
+  // const validateForm = () => {
+  //   const firstName = form.current.first_name.value;
+  //   const lastName = form.current.last_name.value;
+  //   const email = form.current.from_email.value;
+  //   const phone = form.current.phone.value;
+  //   const message = form.current.message.value;
 
-    const newErrors = {};
+  //   const newErrors = {};
 
-    if (!firstName) {
-      newErrors.first_name = 'First name is required';
-    }
+  //   if (!firstName) {
+  //     newErrors.first_name = 'First name is required';
+  //   }
 
-    if (!lastName) {
-      newErrors.last_name = 'Last name is required';
-    }
+  //   if (!lastName) {
+  //     newErrors.last_name = 'Last name is required';
+  //   }
 
-    if (!email) {
-      newErrors.from_email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.from_email = 'Email is invalid';
-    }
+  //   if (!email) {
+  //     newErrors.from_email = 'Email is required';
+  //   } else if (!/\S+@\S+\.\S+/.test(email)) {
+  //     newErrors.from_email = 'Email is invalid';
+  //   }
 
-    // if (!phone) {
-    //   newErrors.phone = 'Phone is required';
-    // } 
-    if (!phone) {
-      newErrors.phone = 'Phone is required';
-    } else if (!/^\d+$/.test(phone)) {
-      newErrors.phone = 'Phone must be a valid number';
-    }
+  //   // if (!phone) {
+  //   //   newErrors.phone = 'Phone is required';
+  //   // } 
+  //   if (!phone) {
+  //     newErrors.phone = 'Phone is required';
+  //   } else if (!/^\d+$/.test(phone)) {
+  //     newErrors.phone = 'Phone must be a valid number';
+  //   }
 
-    if (!message) {
-      newErrors.message = 'Message is required';
-    }
+  //   if (!message) {
+  //     newErrors.message = 'Message is required';
+  //   }
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+  //   setErrors(newErrors);
+  //   return Object.keys(newErrors).length === 0;
+  // };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    if (validateForm()) {
-      emailjs
-        .sendForm(
-          'service_0lhyspu',
-          'template_zfsrlnc',
-          form.current,
-          'daFdzriOxxzSUwK_d'
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            toast.success('Message sent successfully.');
-          },
-          (error) => {
-            console.log(error.text);
-            toast.error('Message is not sent successfully.');
-          }
-        );
-    }
-  };
+  //   if (validateForm()) {
+  //     emailjs
+  //       .sendForm(
+  //         'service_0lhyspu',
+  //         'template_zfsrlnc',
+  //         form.current,
+  //         'daFdzriOxxzSUwK_d'
+  //       )
+  //       .then(
+  //         (result) => {
+  //           console.log(result.text);
+  //           toast.success('Message sent successfully.');
+  //         },
+  //         (error) => {
+  //           console.log(error.text);
+  //           toast.error('Message is not sent successfully.');
+  //         }
+  //       );
+  //   }
+  // };
 
   return (
     <div className='pt-[70px]'>
-      <div className='xl:w-[40vw] flex ml-[auto] mr-[auto] rounded-[15px]'>
+      <h1>Coming soon</h1>
+      {/* <div className='xl:w-[40vw] flex ml-[auto] mr-[auto] rounded-[15px]'>
         <div className='xl:w-[40vw] border-2 flex ml-[auto] mr-[auto] justify-center rounded-[15px] bg-white py-[20px]'>
           <form ref={form} onSubmit={sendEmail}>
             <div className='text-center text-[40px] py-[20px]'>Contact Us</div>
@@ -171,7 +172,7 @@ function ContactForm() {
             />
           </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
