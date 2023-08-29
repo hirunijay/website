@@ -27,55 +27,47 @@ const packageContent = [
     image: Img1,
     title: (
       <>
-        SURF
-        <br />
-        GOLF
-        <br />
-        RETREAT
+        Windswept
+        <br /> Mountain Bike
+        <br /> Expedition
       </>
     ),
     subtitle: "Silver Coast, Portugal",
+    path: "/Windswept",
   },
   {
     image: Img2,
     title: (
       <>
-        LEARN
-        <br />
-        EFOIL
-        <br />
-        SURF
+        Whispers
+        <br /> of Sporting
+        <br /> Elegance
       </>
     ),
     subtitle: "Bacala, Mexico",
+    path: "/TranquilParadise",
   },
   {
     image: Img3,
     title: (
       <>
-        SANDS
-        <br />
-        OF
-        <br />
-        GOBI
+        A Sporting
+        <br /> Euphoria
       </>
     ),
     subtitle: "Gobi Deseart, Mongolia",
+    path: "/ASportingEuphoria",
   },
   {
     image: Img4,
     title: (
       <>
-        MID
-        <br />
-        SUMMER
-        <br />
-        GOLF
-        <br />
-        CLUB
+        Cycling
+        <br /> Odyssey
       </>
     ),
     subtitle: "Ahus, Sweden",
+    path: "/CyclingOdyssey",
   },
   {
     image: Img5,
@@ -87,6 +79,7 @@ const packageContent = [
       </>
     ),
     subtitle: "Galicia Span",
+    path: "/",
   },
   {
     image: Img6,
@@ -100,6 +93,7 @@ const packageContent = [
       </>
     ),
     subtitle: "Skeleton Bay, Namibia",
+    path: "/",
   },
 ];
 
@@ -109,78 +103,78 @@ function GridSection() {
       <div className="w-full py-20 lg:py-60">
         <div className="hidden grid-cols-3 grid-rows-2 gap-6 lg:grid">
           <div className="shadow-lg ">
-          <Link href="/Windswept">
-            <GridItem
-              title="Windswept Mountain Bike Expedition"
-              subtitle="An Exquisite 5-Day adventure "
-              titleFontStyle=""
-              subtitleFontStyle=""
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img1}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+            <Link href="/Windswept">
+              <GridItem
+                title="Windswept Mountain Bike Expedition"
+                subtitle="An Exquisite 5-Day adventure "
+                titleFontStyle=""
+                subtitleFontStyle=""
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img1}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
-          
+
           <div className="shadow-lg column_two">
-          <Link href="/TranquilParadise">
-            <GridItem
-              title="Whispers of Sporting Elegance "
-              subtitle="A Mesmeric 9-Day Visit"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img2}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+            <Link href="/TranquilParadise">
+              <GridItem
+                title="Whispers of Sporting Elegance "
+                subtitle="A Mesmeric 9-Day Visit"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img2}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg">
             <Link href="/ASportingEuphoria">
-            <GridItem
-              title="A Sporting Euphoria "
-              subtitle="A 9-Day Odyssey"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img3}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+              <GridItem
+                title="A Sporting Euphoria "
+                subtitle="A 9-Day Odyssey"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img3}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg">
             <Link href="/CyclingOdyssey">
-            <GridItem
-              title="Cycling Odyssey"
-              subtitle="A 5-Day Dream Sojourn"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img4}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+              <GridItem
+                title="Cycling Odyssey"
+                subtitle="A 5-Day Dream Sojourn"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img4}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg column_two">
@@ -227,27 +221,29 @@ function GridSection() {
           >
             {packageContent.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="relative flex flex-col items-center justify-center">
-                  <div className="flex sm:h-[700px] h-[500px] w-[80%] rounded-[23px]">
-                    <Image
-                      src={item.image}
-                      alt="package one"
-                      height={790}
-                      width={1113}
-                      className="object-cover overflow-hidden rounded-[23px]"
-                    />
-                  </div>
-                  <div className="absolute flex flex-col gap-5 text-center">
-                    <div
-                      className={`${kabel.variable} font-serif font-bold text-white text-4xl leading-none tracking-tighter`}
-                    >
-                      {item.title}
+                <Link href={item.path}>
+                  <div className="relative flex flex-col items-center justify-center">
+                    <div className="flex sm:h-[700px] h-[500px] w-[80%] rounded-[23px]">
+                      <Image
+                        src={item.image}
+                        alt="package one"
+                        height={790}
+                        width={1113}
+                        className="object-cover overflow-hidden rounded-[23px]"
+                      />
                     </div>
-                    <div className="text-2xl font-[400] text-black">
-                      {item.subtitle}
+                    <div className="absolute flex flex-col gap-5 text-center">
+                      <div
+                        className={`${kabel.variable} font-serif font-bold text-white text-4xl leading-none tracking-tighter`}
+                      >
+                        {item.title}
+                      </div>
+                      <div className="text-2xl font-[400] text-black">
+                        {item.subtitle}
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
