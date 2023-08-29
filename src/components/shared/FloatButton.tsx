@@ -81,12 +81,12 @@ function FloatButton() {
 
     if (validateForm()) {
       emailjs
-      .sendForm(
-        "service_73nig4t",
-        "template_3hk190p",
-        form.current ? form.current : "",
-        "vBZs8y73pkIHZq5_R"
-      )
+        .sendForm(
+          "service_73nig4t",
+          "template_3hk190p",
+          form.current ? form.current : "",
+          "vBZs8y73pkIHZq5_R"
+        )
         .then(
           (result) => {
             console.log(result.text);
@@ -104,10 +104,10 @@ function FloatButton() {
     // <div>Coming Soon</div>
     <>
       <div
-        className={`fixed z-50 bottom-10 right-[0%] ${open ? "hidden" : ""}`}
+        className={`fixed z-50 bottom-10 right-[2%] ${open ? "hidden" : ""}`}
       >
         <div
-          className="flex flex-row items-center md:py-8 translate-x-6 bg-gray-300 rounded-md shadow-md md:h-[30px] md:w-[170px] sm:w-[150px] sm:mr-[300px] sm:px-[5px]"
+          className="flex flex-row items-center md:py-8 translate-x-6 bg-gray-300 rounded-md shadow-md hover:bg-gray-900 md:h-[30px] md:w-[190px] sm:w-[180px] w-[180px] sm:mr-[300px] sm:px-[5px]"
           style={{ marginRight: "42px" }}
         >
           {options.map((item, index) => (
@@ -117,7 +117,7 @@ function FloatButton() {
                 onOpenModal();
                 setTitle(item.text);
               }}
-              className="flex items-center justify-center flex-1 h-12 font-mono text-2xl text-gray-900 border-r md:h-14 border-r-gray-500 hover:cursor-pointer last-of-type:border-r-0"
+              className="flex items-center justify-center flex-1 h-12 font-mono text-2xl text-gray-900 border-r md:h-14 border-r-gray-500 hover:cursor-pointer hover:text-gray-100 last-of-type:border-r-0"
             >
               <p className="px-[5px]">{item.text} </p>
             </div>
