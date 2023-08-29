@@ -85,10 +85,10 @@ function ContactForm() {
     if (validateForm()) {
       emailjs
         .sendForm(
-          "service_0lhyspu",
-          "template_zfsrlnc",
+          "service_73nig4t",
+          "template_3hk190p",
           form.current ? form.current : "",
-          "daFdzriOxxzSUwK_d"
+          "vBZs8y73pkIHZq5_R"
         )
         .then(
           (result) => {

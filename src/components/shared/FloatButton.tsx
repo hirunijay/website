@@ -81,12 +81,12 @@ function FloatButton() {
 
     if (validateForm()) {
       emailjs
-        .sendForm(
-          "service_0lhyspu",
-          "template_zfsrlnc",
-          form.current ? form.current : "",
-          "daFdzriOxxzSUwK_d"
-        )
+      .sendForm(
+        "service_73nig4t",
+        "template_3hk190p",
+        form.current ? form.current : "",
+        "vBZs8y73pkIHZq5_R"
+      )
         .then(
           (result) => {
             console.log(result.text);
