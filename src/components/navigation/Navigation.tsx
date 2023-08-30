@@ -27,7 +27,7 @@ function Navigation() {
             <Image
               src={navlogo}
               alt="main_logo"
-              placeholder="blur"
+              // placeholder="blur"
               className="object-contain w-auto p-2"
             />
           </div>

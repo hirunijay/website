@@ -57,21 +57,21 @@ function StickyButton() {
             <span className="italic">Search for </span>
             {title}
           </div>
-          <div className="flex flex-col gap-5 font-mono sm:text-md font-semibold text-white uppercase">
+          <div className="flex flex-col gap-5 font-mono font-semibold text-white uppercase sm:text-md">
             <Link href="/GolfingSerenity">
-            <div>Golfing Serenity</div>
+              <div>Golfing Serenity</div>
             </Link>
             <Link href="/Windswept">
-            <div>Mountain Bike</div>
+              <div>Mountain Bike</div>
             </Link>
             <Link href="/TranquilParadise">
-            <div>Tranquil Paradise</div>
+              <div>Tranquil Paradise</div>
             </Link>
             <Link href="/ASportingEuphoria">
-            <div>Sporting Euphoria</div>
+              <div>Sporting Euphoria</div>
             </Link>
             <Link href="/CyclingOdyssey">
-            <div>Cycling Odyssey</div>
+              <div>Cycling Odyssey</div>
             </Link>
           </div>
         </div>

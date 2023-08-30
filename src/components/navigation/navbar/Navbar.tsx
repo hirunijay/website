@@ -40,7 +40,7 @@ function Navbar() {
           <Image
             src={logo}
             alt="main_logo"
-            placeholder="blur"
+            // placeholder="blur"
             className="object-contain w-auto p-2"
           />
         </div>
@@ -66,6 +66,5 @@ function Navbar() {
 }
 
 export default Navbar;
-
 
 //final package added
