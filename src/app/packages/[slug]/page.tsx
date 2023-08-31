@@ -48,8 +48,8 @@ function PackageInside() {
       ) : (
         <>
           <Section1 content={packageDetails.section1} />
-          <Section4 />
-          <DetailSection />
+          <Section4 content={packageDetails.section4} />
+          <DetailSection content={packageDetails.detailSection} />
           <FloatButton />
           <div className="bg-black">
             <FooterSlider />

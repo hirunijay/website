@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
-import packageInside from "@/common/assets/images/sliderImages/golfsection.jpg";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
@@ -13,7 +12,11 @@ const garamondNarrow = localFont({
   variable: "--font-garamond-narrow-regular",
 });
 
-function Section4() {
+interface Section4Props {
+  content: any;
+}
+
+function Section4({ content }: Section4Props) {
   return (
     <div className="my-20">
       <div className="flex flex-col gap-10">
@@ -27,21 +30,13 @@ function Section4() {
           <div
             className={`${garamondNarrow.variable} text-2xl flex flex-col gap-5 justify-center`}
           >
-            <p className="text-center">
-              Expand your horizons with a week of adventure that will get you
-              surfing on the very first day. Step onto the beaches of Mexico
-              with your sea foil and discover a whole new world. This tour is
-              designed for those who want to learn to surf foil or would like to
-              improve their skills and get away from it all. Discover the lagoon
-              of Bacalar, a unique ecosystem and home to many animals such as
-              turtles, manatees, and dolphins.
-            </p>
+            <p className="text-center">{content.description}</p>
           </div>
         </div>
         <div className="h-[500px] w-[80%] overflow-hidden flex mx-auto drop-shadow-xl">
           {" "}
           <Image
-            src={packageInside}
+            src={content.desImage}
             alt={"about-us-image"}
             placeholder="blur"
             // height={712}
