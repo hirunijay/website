@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import innerHeroImg from "../../../common/assets/images/innerPageImage/inner_img1.webp";
 import localFont from "next/font/local";
 
 const kabel = localFont({
@@ -9,13 +8,17 @@ const kabel = localFont({
   variable: "--font-kabel-bold",
 });
 
-function Section1() {
+interface Section1Props {
+  content: any;
+}
+
+function Section1({ content }: Section1Props) {
   return (
     <div className="relative">
       <div className="flex items-center justify-center overflow-hidden lg:h-[800px] h-96">
         <div className="h-full w-full absolute z-[-1]">
           <Image
-            src={innerHeroImg}
+            src={content.heroImg}
             alt="Picture of the author"
             placeholder="blur"
             layout="fill"
@@ -27,14 +30,11 @@ function Section1() {
         <div
           className={`text-3xl mb-4 xl:leading-[110px] ${kabel.variable} font-serif tracking-tight`}
         >
-          <span className="text-[6.4vw] font-[400]">LEARN</span>
-          <br />
-          <span className="text-[10.66vw] font-[400]">EFOIL</span>
-          <br />
-          <span className="text-[10.66vw] font-[400]">SURF</span>
-          <br />
+          <div className="text-[6.4vw] font-[400]">{content.title}</div>
         </div>
-        <div className="text-[2vw] font-[400] text-black">Bacalar, Mexico</div>
+        <div className="text-[2vw] font-[400] text-black">
+          {content.subtitle}
+        </div>
       </div>
     </div>
   );
