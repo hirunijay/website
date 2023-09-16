@@ -103,84 +103,84 @@ const packageContent = [
   },
 ];
 
-function GridSection() {
+function Adventure() {
   return (
     <div className="mx-0">
       <div className="w-full py-20 lg:py-60">
         <div className="hidden grid-cols-3 grid-rows-2 gap-6 lg:grid">
           <div className="shadow-lg ">
-          <Link href="/Windswept">
-            <GridItem
-              title="Windswept Mountain Bike Expedition"
-              subtitle="An Exquisite 5-Day adventure "
-              titleFontStyle=""
-              subtitleFontStyle=""
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img1}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+            <Link href="/Windswept">
+              <GridItem
+                title="Windswept Mountain Bike Expedition"
+                subtitle="An Exquisite 5-Day adventure "
+                titleFontStyle=""
+                subtitleFontStyle=""
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img1}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
-          
+
           <div className="shadow-lg column_two">
-          <Link href="/TranquilParadise">
-            <GridItem
-              title="Tranquil Paradise :- Whispers of Sporting Elegance "
-              subtitle="A Mesmeric 9-Day Visit"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img2}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+            <Link href="/TranquilParadise">
+              <GridItem
+                title="Tranquil Paradise :- Whispers of Sporting Elegance "
+                subtitle="A Mesmeric 9-Day Visit"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img2}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg">
             <Link href="/ASportingEuphoria">
-            <GridItem
-              title="A Sporting Euphoria "
-              subtitle="A 9-Day Odyssey"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img3}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+              <GridItem
+                title="A Sporting Euphoria "
+                subtitle="A 9-Day Odyssey"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img3}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg">
             <Link href="/CyclingOdyssey">
-            <GridItem
-              title="Cycling Odyssey"
-              subtitle="A 5-Day Dream Sojourn"
-              subtitleTextSize=""
-              descLineHeight=""
-              descFontWeight=""
-              // descFontSize=""
-              description="Starting from $1.800"
-              actions=""
-              backgroundImage={Img4}
-              titleTextColour=""
-              descriptionTextColour="white"
-              // height="h-[600px]"
-            />
+              <GridItem
+                title="Cycling Odyssey"
+                subtitle="A 5-Day Dream Sojourn"
+                subtitleTextSize=""
+                descLineHeight=""
+                descFontWeight=""
+                // descFontSize=""
+                description="Starting from $1.800"
+                actions=""
+                backgroundImage={Img4}
+                titleTextColour=""
+                descriptionTextColour="white"
+                // height="h-[600px]"
+              />
             </Link>
           </div>
           <div className="shadow-lg column_two">
@@ -257,4 +257,10 @@ function GridSection() {
   );
 }
 
-export default GridSection;
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+export default Adventure;
