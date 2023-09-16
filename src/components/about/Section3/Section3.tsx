@@ -5,6 +5,17 @@ import GridItem from "@/components/home/GridSection/GridItem";
 import Img1 from "@/common/assets/images/aboutImages/about2.webp";
 import Img2 from "@/common/assets/images/aboutImages/about3.webp";
 import Image3 from "@/common/assets/images/aboutImages/aboutUsTrain.jpg"
+import localFont from "next/font/local";
+
+const kabel = localFont({
+  src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",
+  variable: "--font-kabel-bold",
+});
+
+const garamondNarrow = localFont({
+  src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
+  variable: "--font-garamond-narrow-regular",
+});
 
 
 // function Section3() {
@@ -73,8 +84,8 @@ function Section3 () {
     <div className="pt-[50px]">
       <hr className="border-2 text-black w-[40vw] flex ml-[auto] mr-[auto]"/>
       <div className="pt-[50px] md:flex lg:w-[1120px] ml-[auto] mr-[auto] pl-[50px] pr-[50px]">
-        <div className="md:text-[40px] font-[500] leading-[40px] md:w-[360px] pr-[200px]">Our Mission</div>
-        <div className="md:text-[18px] md:font-[200] leading-[20px] ">To creating beautiful memories by showing the authentic and diverse cultures of Sri Lanka with it’s breathtaking beauty, delicious cuisine and lifestyle.</div>
+        <div className={`md:text-[40px] font-[500] leading-[40px] md:w-[360px] pr-[200px] ${kabel.variable} font-serif`}>Our Mission</div>
+        <div className="md:text-[20px] md:font-[200] leading-[30px] ">To creating beautiful memories by showing the authentic and diverse cultures of Sri Lanka with it’s breathtaking beauty, delicious cuisine and lifestyle.</div>
       </div>
       <div className="pt-[50px] pb-[50px]">
       <Image
@@ -86,8 +97,8 @@ function Section3 () {
            />
       </div>
       <div className="md:flex lg:w-[1120px] ml-[auto] mr-[auto] pl-[50px] pr-[50px]">
-        <div className="md:text-[18px] md:font-[200] leading:[20px]">To provide our guests the most unique and finest experiences, whilst travelling through this beautiful paradise and also be an aid for csr projects to develop rural area livelihoods.</div>
-        <div className="md:text-[40px] font-[500] leading-[40px] md:w-[360px] text-right pl-[200px]">Our Vision</div>
+        <div className="md:text-[20px] md:font-[200] leading:[30px]">To provide our guests the most unique and finest experiences, whilst travelling through this beautiful paradise and also be an aid for csr projects to develop rural area livelihoods.</div>
+        <div className={`md:text-[40px] font-[500] leading-[40px] md:w-[360px] pr-[200px]  ${kabel.variable} font-serif pl-[200px]`}>Our Vision</div>
       </div>
     </div>
   )

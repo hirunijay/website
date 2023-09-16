@@ -3,10 +3,11 @@ import React from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import { IoMdClose } from "react-icons/io";
+import Link from "next/link";
 
 const options = [
-  { text: "Land", path: "/" },
   { text: "Ride", path: "/" },
+  // { text: "Inquire Now", path: "/" },
 ];
 
 function StickyButton() {
@@ -30,7 +31,8 @@ function StickyButton() {
               className="flex items-center justify-center flex-1 h-12 text-lg text-white border-r md:h-14 border-r-gray-500 hover:cursor-pointer last-of-type:border-r-0"
             >
               <p>
-                Choose <span className="italic">{item.text}</span>
+                {/* Choose <span className="italic">{item.text}</span> */}
+                Packages
               </p>
             </div>
           ))}
@@ -55,12 +57,22 @@ function StickyButton() {
             <span className="italic">Search for </span>
             {title}
           </div>
-          <div className="flex flex-col gap-5 font-mono text-3xl font-semibold text-white uppercase">
-            <div>Africa</div>
-            <div>Europe</div>
-            <div>N.America</div>
-            <div>S.America</div>
-            <div>Asia</div>
+          <div className="flex flex-col gap-5 font-mono sm:text-md font-semibold text-white uppercase">
+            <Link href="/GolfingSerenity">
+            <div>Golfing Serenity</div>
+            </Link>
+            <Link href="/Windswept">
+            <div>Mountain Bike</div>
+            </Link>
+            <Link href="/TranquilParadise">
+            <div>Tranquil Paradise</div>
+            </Link>
+            <Link href="/ASportingEuphoria">
+            <div>Sporting Euphoria</div>
+            </Link>
+            <Link href="/CyclingOdyssey">
+            <div>Cycling Odyssey</div>
+            </Link>
           </div>
         </div>
         <div

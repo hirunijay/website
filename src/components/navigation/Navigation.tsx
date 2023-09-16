@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navbar from "./navbar/Navbar";
 import MobileNavbar from "./navbar/MobileNavbar";
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "@/common/assets/images/homeImg/Final-Logo.png";
+import navlogo from "@/common/assets/images/homeImg/logo_updated.png";
 
 function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -23,9 +23,9 @@ function Navigation() {
           href={"/"}
           className="flex items-center justify-start flex-1 h-full"
         >
-          <div className="h-[25px] w-[125px] flex items-center">
+          <div className="xl:h-[75px] xl:w-[225px] h-[35px] w-[130px] flex items-center">
             <Image
-              src={logo}
+              src={navlogo}
               alt="main_logo"
               placeholder="blur"
               className="object-contain w-auto p-2"

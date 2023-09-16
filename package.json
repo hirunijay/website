@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -33,6 +34,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4"
+    "@types/aos": "^3.0.4",
+    "tailwind-scrollbar": "^3.0.5"
   }
 }

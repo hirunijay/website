@@ -19,7 +19,7 @@ function Footer() {
   ];
 
   return (
-    <div className="flex flex-col w-full text-white bg-black">
+    <div className="flex flex-col w-full text-white bg-black xl:pl-[50px] lg:pr-[50px] md:px-5 sm:justify-center">
       <div className="container mx-auto">
         <div className="pt-[150px]">
           <hr />
@@ -35,7 +35,7 @@ function Footer() {
                 </Link>
               ))}
             </ul>
-            <div className="ml-auto lg:hidden">
+            <div className="ml-auto md:hidden">
               <button
                 className="flex items-center justify-center py-1 origin-center -rotate-90 rounded-full appearance-none focus:outline-none"
                 onClick={scrollToTop}
@@ -87,7 +87,7 @@ function Footer() {
               </button>
             </div>
           </div>
-          <div className="justify-end hidden ml-auto lg:flex md:flex-1">
+          <div className="justify-end hidden ml-auto md:flex md:flex-1">
             <button
               className="flex items-center justify-center w-20 h-20 origin-center -rotate-90 rounded-full appearance-none hover:border hover:border-gray-300 focus:outline-none"
               onClick={scrollToTop}

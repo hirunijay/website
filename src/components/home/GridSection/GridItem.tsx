@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const garamondNarrow = localFont({
   src: "../../../common/assets/fonts/garamond-condensed-regular_a2s7r/GaramondCondensedRegular.ttf",
@@ -63,7 +64,7 @@ const GridItem = ({
       <div className="absolute flex flex-col items-center justify-center w-full px-3 mt-32 grid_card__content">
         <div className="flex flex-col gap-3 text-center text_content mx-7 lg:mx-5 xl:mx-5 2xl:mx-8 ">
           <h1
-            className={`font-[800] text-white 2xl:text-[90px] xl:text-6xl ${kabel.variable} font-serif`}
+            className={`font-[800] text-white 2xl:text-[70px] xl:text-6xl ${kabel.variable} font-serif drop-shadow-2xl drop-shadow-gray-900`}
           >
             {title}
           </h1>
