@@ -19,7 +19,7 @@ function ASportingEuphoria() {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   return {
     props: {},
   };
