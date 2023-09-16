@@ -19,7 +19,7 @@ function about() {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   // const data = {
   //   title: 'Static Subpage',
   //   description: 'This is a static subpage.',
