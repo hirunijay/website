@@ -19,10 +19,4 @@ function ASportingEuphoria() {
   );
 }
 
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}
-
 export default ASportingEuphoria;

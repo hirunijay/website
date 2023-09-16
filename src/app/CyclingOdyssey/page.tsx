@@ -19,10 +19,4 @@ function CyclingOdyssey() {
   );
 }
 
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}
-
 export default CyclingOdyssey;
