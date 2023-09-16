@@ -98,7 +98,7 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "../../../../src/common/assets/images/homeImg/lift_day0-18.webp";
 import localFont from "next/font/local";
-import innerHeroImg from "../../../common/assets/images/innerPageImage/golfHeroInner.jpg";
+import innerHeroImg from "../../../common/assets/images/homeImg/mainBanner.jpg";
 
 const kabel = localFont({
   src: "../../../common/assets/fonts/kabel_sv/kabel_bd/KabelBd-Normal.ttf",

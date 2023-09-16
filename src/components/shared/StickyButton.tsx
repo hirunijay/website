@@ -31,7 +31,8 @@ function StickyButton() {
               className="flex items-center justify-center flex-1 h-12 text-lg text-white border-r md:h-14 border-r-gray-500 hover:cursor-pointer last-of-type:border-r-0"
             >
               <p>
-                Choose <span className="italic">{item.text}</span>
+                {/* Choose <span className="italic">{item.text}</span> */}
+                Packages
               </p>
             </div>
           ))}

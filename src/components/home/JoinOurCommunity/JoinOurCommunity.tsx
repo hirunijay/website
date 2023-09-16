@@ -32,18 +32,18 @@ function JoinOurCommunity() {
       </div>
       <div className={`${garamondNarrow.variable} font-sans text-black pt-7`}>
         <div className="lg:text-[80px] text-5xl font-[400] lg:leading-[80px] leading-[55px]">
-          Get the only
+        Stay Connected
         </div>
         <div>
           <span className="lg:text-[80px] text-5xl font-[400] lg:leading-[80px] leading-[55px]">
-            Newsletter&nbsp;
+          with Our Latest&nbsp;
           </span>
           <span className="lg:text-[80px] text-5xl font-[300] lg:leading-[80px] leading-[55px] italic">
-            worth
+          Updates
           </span>
         </div>
         <div className="lg:text-[80px] text-5xl font-[300] lg:leading-[80px] leading-[55px] italic">
-          <span>riding</span>
+          <span>and Discoveries!</span>
         </div>
       </div>
       <div>

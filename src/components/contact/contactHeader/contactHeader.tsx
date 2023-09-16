@@ -4,8 +4,8 @@ function ContactHeader() {
     const data = 
         {
             id: 1,
-            title: "This is heading!",
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam dolore a voluptate deserunt? Maxime debitis ad inventore at distinctio voluptatum deleniti, nesciunt labore tempore dolore et placeat exercitationem atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis animi cumque dolor laudantium, corporis explicabo voluptas sit corrupti quibusdam doloribus eum totam maxime debitis. Deserunt blanditiis corporis facere temporibus omnis?"
+            title: "Connect with TranquilityParadise - Your Gateway to Sports Tourism Adventures!",
+            content: "Our team of dedicated travel experts is here to assist you in crafting unforgettable journeys to iconic sporting events, training camps, and athletic competitions around the globe. From witnessing the Grand Prix in Monaco to training with professional athletes, we make your sports dreams a reality."
         }
     
   return (
