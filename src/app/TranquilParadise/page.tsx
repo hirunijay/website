@@ -19,10 +19,4 @@ function TranquilParadise() {
   );
 }
 
-export async function getServerSideProps() {
-  return {
-    props: {},
-  };
-}
-
 export default TranquilParadise;
