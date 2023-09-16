@@ -6,7 +6,7 @@ import detailImageP1 from "@/common/assets/images/GridImages/img1.jpg";
 //Windswept
 import heroImageP2 from "@/common/assets/images/sliderImages/mountainSection.jpg";
 import desImageP2 from "@/common/assets/images/sliderImages/imgsl4.jpg";
-import detailImageP2 from "@/common/assets/images/GridImages/img1.jpg";
+import detailImageP2 from "@/common/assets/images/innerPageImage/foodinner.jpg";
 
 export const packageData = {
   GolfingSerenity: {
