@@ -8,7 +8,7 @@ import FooterSlider from "@/components/packageInside/FooterSlider/FooterSlider";
 import FloatButton from "@/components/shared/FloatButton";
 import React from "react";
 
-function packageInside() {
+function GolfingSerenity() {
   return (
     <div className="mx-0">
       <Section1 />
@@ -25,4 +25,10 @@ function packageInside() {
   );
 }
 
-export default packageInside;
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+export default GolfingSerenity;

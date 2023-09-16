@@ -5,7 +5,7 @@ import FooterSlider from "@/components/ASportingEuphoria/FooterSlider/FooterSlid
 import FloatButton from "@/components/shared/FloatButton";
 import React from "react";
 
-function packageInside() {
+function ASportingEuphoria() {
   return (
     <div className="mx-0">
       <Section1 />
@@ -19,4 +19,10 @@ function packageInside() {
   );
 }
 
-export default packageInside;
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+export default ASportingEuphoria;
